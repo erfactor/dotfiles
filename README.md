@@ -1,2 +1,4 @@
 # Bash-DotFiles
-.vimrc, .viminfo, .bashrc 
+- .vimrc
+- .viminfo
+- .bashrc 
