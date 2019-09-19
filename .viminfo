@@ -11,19 +11,115 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0/\<nnoremap\>
+~MSle0~/\v\chelp
 
 # Last Substitute Search Pattern:
-~MSle0~&set
+~MSle0&\v\ci
 
 # Last Substitute String:
-$papiez
+$?
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1568635861,,"x"
+|2,0,1568872382,,"x"
+:!range 7 10 file
+|2,0,1568872354,,"!range 7 10 file"
+:reg f
+|2,0,1568872227,,"reg f"
+:reg
+|2,0,1568872156,,"reg"
 :q!
-|2,0,1568633330,,"q!"
+|2,0,1568872022,,"q!"
+:!range 30 100 file
+|2,0,1568871963,,"!range 30 100 file"
+:w
+|2,0,1568786791,,"w"
+:m .-2
+|2,0,1568786596,,"m .-2"
+:q
+|2,0,1568715724,,"q"
+:!vrc
+|2,0,1568712834,,"!vrc"
+:!
+|2,0,1568712827,,"!"
+:set scroll=100
+|2,0,1568712617,,"set scroll=100"
+:let @q='3lipapajÂ€Ã½a$i'
+|2,0,1568712518,,"let @q='3lipapajÂ€Ã½a$i'"
+:vsp
+|2,0,1568712252,,"vsp"
+:h registers
+|2,0,1568712236,,"h registers"
+:!186
+|2,0,1568712223,,"!186"
+:Filter
+|2,0,1568712142,,"Filter"
+:let @Q='nbaibna'
+|2,0,1568701976,,"let @Q='nbaibna'"
+:let @q='i'
+|2,0,1568701953,,"let @q='i'"
+:let @q='ixdÂ€Ã½a2l'
+|2,0,1568701910,,"let @q='ixdÂ€Ã½a2l'"
+:let @q='ixdÂ€Ã½a2li'
+|2,0,1568701880,,"let @q='ixdÂ€Ã½a2li'"
+:let @q
+|2,0,1568701831,,"let @q"
+:let @q='liasdÂ€Ã½a$'
+|2,0,1568701797,,"let @q='liasdÂ€Ã½a$'"
+:let @q='3lipapajÂ€Ã½a$a'
+|2,0,1568701465,,"let @q='3lipapajÂ€Ã½a$a'"
+:let @Q='i'
+|2,0,1568701443,,"let @Q='i'"
+:h registrs
+|2,0,1568700699,,"h registrs"
+:h registres
+|2,0,1568700694,,"h registres"
+:'<,'>s/\//?
+|2,0,1568700491,,"'<,'>s/\\//?"
+:reg t
+|2,0,1568700440,,"reg t"
+:reg *
+|2,0,1568700280,,"reg *"
+:e xd
+|2,0,1568699154,,"e xd"
+:reg :
+|2,0,1568699134,,"reg :"
+:w trellotext
+|2,0,1568699126,,"w trellotext"
+:tabnew
+|2,0,1568699109,,"tabnew"
+:tabn
+|2,0,1568699107,,"tabn"
+:tabn fix
+|2,0,1568699102,,"tabn fix"
+:reg .
+|2,0,1568698927,,"reg ."
+:reg #
+|2,0,1568698923,,"reg #"
+:e inba
+|2,0,1568698902,,"e inba"
+:bn
+|2,0,1568698887,,"bn"
+:bp
+|2,0,1568698884,,"bp"
+:e aleinba
+|2,0,1568698878,,"e aleinba"
+:%s/papryk/paprykarz/g
+|2,0,1568698524,,"%s/papryk/paprykarz/g"
+:reg =
+|2,0,1568698209,,"reg ="
+:let @q='A paprykaÂ€Ã½a^cw'
+|2,0,1568697870,,"let @q='A paprykaÂ€Ã½a^cw'"
+:let @q='A papajaÂ€Ã½a^i'
+|2,0,1568697720,,"let @q='A papajaÂ€Ã½a^i'"
+:let @q='A papajaÂ€Ã½a^cw'
+|2,0,1568697675,,"let @q='A papajaÂ€Ã½a^cw'"
+:'<,'>normal @q
+|2,0,1568697636,,"'<,'>normal @q"
+:'<,'>normal <space>
+|2,0,1568697605,,"'<,'>normal <space>"
+:'<,'>s/ticks/Ticks
+|2,0,1568697194,,"'<,'>s/ticks/Ticks"
 :.,.+3s
 |2,0,1568633326,,".,.+3s"
 :s
@@ -48,10 +144,6 @@ $papiez
 |2,0,1568633113,,"'<,'>normal @@"
 :normalqqqq
 |2,0,1568633079,,"normalqqqq"
-:q
-|2,0,1568632753,,"q"
-:reg
-|2,0,1568632749,,"reg"
 :.,.+1s/gv//
 |2,0,1568632662,,".,.+1s/gv//"
 :.,.+1s/nore/ /
@@ -90,8 +182,6 @@ $papiez
 |2,0,1568631414,,"%s/\\v\\c(public|private).*\\(.*\\)$\\n.*\\{/\\=submatch(0) . \"\\n         Tizen.Log.Verbose(\\\"tag\\\",\\\"\" . substitute(submatch(0),'\\v\\n.*\\{','','g') . \"\\\");\""
 :%s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");" 
 |2,0,1568631147,,"%s/\\v\\c(public|private).*\\(.*\\)$\\n.*\\{/\\=submatch(0) . \"\\n         Tizen.Log.Verbose(\\\"tag\\\",\\\"\" . substitute(submatch(0),'\\v\\n.*\\{','','g') . \"\\\");\" "
-:w
-|2,0,1568631378,,"w"
 :e AddLogs
 |2,0,1568630909,,"e AddLogs"
 :%s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) .       Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");" 
@@ -162,8 +252,6 @@ $papiez
 |2,0,1568628274,,"set nowrap"
 :set cul
 |2,0,1568628267,,"set cul"
-:tabn
-|2,0,1568628253,,"tabn"
 :tabn ~/.vimrc
 |2,0,1568628249,,"tabn ~/.vimrc"
 :help :s
@@ -220,8 +308,6 @@ $papiez
 |2,0,1568625946,,"a inba"
 :a ale
 |2,0,1568625930,,"a ale"
-:vsp
-|2,0,1568625596,,"vsp"
 :help append
 |2,0,1568625586,,"help append"
 :append 'ale'
@@ -286,8 +372,6 @@ $papiez
 |2,0,1568610162,,".-2,.+1le 12"
 :set scroll=19
 |2,0,1568610006,,"set scroll=19"
-:set scroll=100
-|2,0,1568609999,,"set scroll=100"
 :set scroll
 |2,0,1568609984,,"set scroll"
 :set expandtab
@@ -336,92 +420,42 @@ $papiez
 |2,0,1568210483,,"%y"
 :e trello.awk
 |2,0,1568210334,,"e trello.awk"
-:let @a=':s/\s\_€kb+/;€kb;:€kb€kb': 'I    '€ýaA' let @a=':s/\s\_<80>kb+/;<80>kb;:<80>kb<80>kb': '^MI    '^[<80><fd>aA' ,^[<80><fd>a0j',€ýa0j'
-|2,0,1568181747,,"let @a=':s/\\s\\_€kb+/;€kb;:€kb€kb': 'I    '€ýaA' let @a=':s/\\s\\_<80>kb+/;<80>kb;:<80>kb<80>kb': '^MI    '^[<80><fd>aA' ,^[<80><fd>a0j',€ýa0j'"
-:6,11 @d
-|2,0,1568181314,,"6,11 @d"
-:6,11y
-|2,0,1568181307,,"6,11y"
-:,9 @d
-|2,0,1568181292,,",9 @d"
-:.,
-|2,0,1568181284,,".,"
-:6,$@d
-|2,0,1568181265,,"6,$@d"
-:normal @d
-|2,0,1568181238,,"normal @d"
-:normal @q
-|2,0,1568181168,,"normal @q"
-:nnoremap <Space> @d
-|2,0,1568181017,,"nnoremap <Space> @d"
-:tabn 2
-|2,0,1568180994,,"tabn 2"
-:tabn 1
-|2,0,1568180970,,"tabn 1"
-:reg d
-|2,0,1568180865,,"reg d"
-:reg q
-|2,0,1568180857,,"reg q"
-:s/\s\+/': '
-|2,0,1568180718,,"s/\\s\\+/': '"
-:tabnew temp
-|2,0,1568180528,,"tabnew temp"
-:set softtabstop=1
-|2,0,1568180225,,"set softtabstop=1"
-:set tabstop=4
-|2,0,1568180220,,"set tabstop=4"
-:set softtabstop=2
-|2,0,1568180204,,"set softtabstop=2"
-:set tabstop=2
-|2,0,1568180167,,"set tabstop=2"
-:set tabstop=1
-|2,0,1568180150,,"set tabstop=1"
-:set softtabstop 1
-|2,0,1568180139,,"set softtabstop 1"
-:help softtabstop
-|2,0,1568180033,,"help softtabstop"
-:expandtab
-|2,0,1568180009,,"expandtab"
-:help tabstop
-|2,0,1568179884,,"help tabstop"
-:set softtabstop=20
-|2,0,1568179831,,"set softtabstop=20"
-:set tabstop=20
-|2,0,1568179797,,"set tabstop=20"
-:set softtabstop=4
-|2,0,1568179789,,"set softtabstop=4"
-:set shiftwidth=20
-|2,0,1568179744,,"set shiftwidth=20"
-:set shiftwidth=10
-|2,0,1568179729,,"set shiftwidth=10"
-:settab
-|2,0,1568179683,,"settab"
-:settab 15
-|2,0,1568179681,,"settab 15"
-:marks
-|2,0,1568179496,,"marks"
-:'<,'>:x
-|2,0,1568178725,,"'<,'>:x"
-:tabnext
-|2,0,1568178702,,"tabnext"
-:tabn1
-|2,0,1568178699,,"tabn1"
-:%d
-|2,0,1568178670,,"%d"
-:w ale-inba
-|2,0,1568178413,,"w ale-inba"
-:tabnew
-|2,0,1568178406,,"tabnew"
-:"
-|2,0,1568095808,,"\""
-:30s/\\/\//g
-|2,0,1568014104,,"30s/\\\\/\\//g"
-:30s/\\//
-|2,0,1568014090,,"30s/\\\\//"
-:30s/\\/\//
-|2,0,1568014078,,"30s/\\\\/\\//"
 
 # Search String History (newest to oldest):
+?/\v\chelp
+|2,1,1568872074,47,"\\v\\chelp"
+?/\v\cman
+|2,1,1568872053,47,"\\v\\cman"
+?/\v\c(
+|2,1,1568872041,47,"\\v\\c("
+?/\v\cweather
+|2,1,1568726651,47,"\\v\\cweather"
+?/\v\ci
+|2,1,1568712870,47,"\\v\\ci"
+?/\v\c100
+|2,1,1568712604,47,"\\v\\c100"
+?/\v\cale
+|2,1,1568712563,47,"\\v\\cale"
+?/\v\clet
+|2,1,1568712310,47,"\\v\\clet"
+?/\v\c
+|2,1,1568712288,47,"\\v\\c"
+??\v\cand
+|2,1,1568700525,63,"\\v\\cand"
+? \/
+|2,1,1568700491,,"\\/"
+? papryk
+|2,1,1568698524,,"papryk"
+?/\v\cpapryk/aleinba
+|2,1,1568698502,47,"\\v\\cpapryk/aleinba"
+??papryk
+|2,1,1568698467,63,"papryk"
+? ticks
+|2,1,1568697194,,"ticks"
+?/\v\cendti
+|2,1,1568697177,47,"\\v\\cendti"
+?/\v\cendticks
+|2,1,1568697162,47,"\\v\\cendticks"
 ? set
 |2,1,1568633313,,"set"
 ? \<nnoremap\>
@@ -452,8 +486,6 @@ $papiez
 |2,1,1568627595,47,"\\v\\c(public|private).*\\(.*\\)$"
 ?/\v\c(public|private).*\(.*\)[^;]
 |2,1,1568627513,47,"\\v\\c(public|private).*\\(.*\\)[^;]"
-?/\v\c
-|2,1,1568627486,47,"\\v\\c"
 ?/\v\c(public|private).*\(.*\)[^;]$
 |2,1,1568627471,47,"\\v\\c(public|private).*\\(.*\\)[^;]$"
 ?/\v\c(public|private).*\(.*\)
@@ -546,6 +578,16 @@ $papiez
 |2,1,1568011741,47,"appli"
 
 # Expression History (newest to oldest):
+=system('ls')
+|2,2,1568698179,,"system('ls')"
+=system('ls)
+|2,2,1568698160,,"system('ls)"
+=p
+|2,2,1568698118,,"p"
+=pq
+|2,2,1568698112,,"pq"
+=2+2
+|2,2,1568698083,,"2+2"
 
 # Input Line History (newest to oldest):
 
@@ -553,375 +595,398 @@ $papiez
 
 # Registers:
 "0	LINE	0
-	alias vrc='vim ~/.vimrc'
-|3,0,0,1,1,0,1568625213,"alias vrc='vim ~/.vimrc'"
+	alias brc='vim ~/.bashrc'
+|3,0,0,1,1,0,1568872265,"alias brc='vim ~/.bashrc'"
 "1	LINE	0
 	
-|3,0,1,1,1,0,1568630915,""
+|3,0,1,1,1,0,1568872246,""
 "2	LINE	0
-	    'two': 'second example' ,
-|3,0,2,1,1,0,1568626434,"    'two': 'second example' ,"
+	
+|3,0,2,1,1,0,1568872245,""
 "3	LINE	0
-	    xd
-	    xd
-|3,0,3,1,2,0,1568626429,"    xd","    xd"
-"4	LINE	0
-	    }
-	    aleguwno
-|3,0,4,1,2,0,1568626428,"    }","    aleguwno"
-"5	LINE	0
-	for(i=0;i<n;i++)
-	    {
-	       int a = b;
-	       int x = c;
-	       twojastara->papiez = xd;
-	
-	    }
-|3,0,5,1,7,0,1568625417,"for(i=0;i<n;i++)","    {","       int a = b;","       int x = c;","       twojastara->papiez = xd;","","    }"
-"6	LINE	0
-	af7
-	af8
-	af9
-	af10
-	bc2
-	bc3
-	bc4
-	bc5
-|3,0,6,1,8,0,1568619003,"af7","af8","af9","af10","bc2","bc3","bc4","bc5"
-"7	LINE	0
-	bc6
-	bc7
-	bc8
-	bc9
-	bc10
-	bd2
-	bd3
-	bd4
-	bd5
-	bd6
-	bd7
-	bd8
-	bd9
-	bd10
-	bf2
-	bf3
-	bf4
-	bf5
-	bf6
-	bf7
-	bf8
-	bf9
-	bf10
-	
-|3,0,7,1,24,0,1568618997,"bc6","bc7","bc8","bc9","bc10","bd2","bd3","bd4","bd5","bd6","bd7","bd8","bd9","bd10","bf2","bf3","bf4","bf5","bf6","bf7","bf8","bf9","bf10",""
-"8	LINE	0
-	ffds
-	a
-	c{2.10} ad{2.10}
-	a
-	f
-	{
-	2
-	.10} bc{2.10}
-	b
-	d
-	{2.10}
-	
-	bf{2.10}
-	
-	a
-	c
-	2
-	a
-	c
-	3
-	a
-	c
-	4
-	a
-	c
 	5
-	a
-	c
 	6
-	a
-	c
 	7
-	ac8
-	ac9
-	ac10
-	a
-	d2
-	ad3
-	ad4
-	ad5
-|3,0,8,1,40,0,1568618989,"ffds","a","c{2.10} ad{2.10}","a","f","{","2",".10} bc{2.10}","b","d","{2.10}","","bf{2.10}","","a","c","2","a","c","3","a","c","4","a","c","5","a","c","6","a","c","7","ac8","ac9","ac10","a","d2","ad3","ad4","ad5"
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+|3,0,3,1,16,0,1568871934,"5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
+"4	LINE	0
+	   twojs stara to twÃ³j stary 
+|3,0,4,1,1,0,1568713007,"   twojs stara to twÃ³j stary "
+"5	CHAR	0
+	l€ýa0
+|3,0,5,0,1,0,1568701399,"l€ýa0"
+"6	CHAR	0
+	l€ýa0
+|3,0,6,0,1,0,1568701399,"l€ýa0"
+"7	CHAR	0
+	l€ýa0
+|3,0,7,0,1,0,1568701399,"l€ýa0"
+"8	LINE	0
+	    'two': 'second example' ,
+|3,0,8,1,1,0,1568626434,"    'two': 'second example' ,"
 "9	LINE	0
+	    xd
+	    xd
+|3,0,9,1,2,0,1568626429,"    xd","    xd"
+"a	LINE	0
 	
-|3,0,9,1,1,0,1568618350,""
-"a	CHAR	0
-	2yyggP``
-|3,0,10,0,1,0,1568180375,"2yyggP``"
+	
+	  2 for (int i=0;i<n;i++)
+	  4    isdfji
+	  5    iljil
+	  7 isdflij
+|3,0,10,1,6,0,1568713012,"","","  2 for (int i=0;i<n;i++)","  4    isdfji","  5    iljil","  7 isdflij"
 "b	CHAR	0
 	€ýa
 |3,0,11,0,1,0,1568013181,"€ýa"
 "d	CHAR	0
 	:s/\s\_€kb+/;€kb;:€kb€kb': 'I    '€ýaA' ,€ýa0j
 |3,0,13,0,1,0,1568180744,":s/\\s\\_€kb+/;€kb;:€kb€kb': 'I    '€ýaA' ,€ýa0j"
+"f	LINE	0
+	range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
+|3,0,15,1,1,0,1568872217,"range() { for ((i=$1; i<=$2; i++)); do printf \"$i\\n\">> $3; done; }"
+"i	CHAR	0
+	papajqu€ýa
+|3,0,18,0,1,0,1568697523,"papajqu€ýa"
 "o	CHAR	0
 	€ýa
 |3,0,24,0,1,0,1568616557,"€ýa"
 "p	CHAR	0
-	i{}k€kb€ýai€ýak	i	q€kb€ýa
-|3,0,25,0,1,0,1568272688,"i{}k€kb€ýai€ýak	i	q€kb€ýa"
-"t@	CHAR	0
+	p
+|3,0,25,0,1,0,1568697512,"p"
+"t	CHAR	0
 	A{}€kl€ýaO    €ýa
-|3,2,29,0,1,0,1568274872,"A{}€kl€ýaO    €ýa"
+|3,0,29,0,1,0,1568274872,"A{}€kl€ýaO    €ýa"
 "w	CHAR	0
 	p 
 |3,0,32,0,1,0,1568179305,"p "
 ""-	CHAR	0
-	included/
-|3,1,36,0,1,0,1568635851,"included/"
+	1
+|3,1,36,0,1,0,1568872380,"1"
 
 # File marks:
-'0  4  8  ~/Bash-DotFiles/.gitignore
-|4,48,4,8,1568635862,"~/Bash-DotFiles/.gitignore"
-'1  5  0  ~/.vimrc
-|4,49,5,0,1568633330,"~/.vimrc"
-'2  18  10  ~/.vimrc
-|4,50,18,10,1568632807,"~/.vimrc"
-'3  18  10  ~/.vimrc
-|4,51,18,10,1568632807,"~/.vimrc"
-'4  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,52,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
-'5  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,53,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
-'6  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,54,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
-'7  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,55,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
-'8  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,56,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
-'9  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,57,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
+'0  2  1  /c/Users/r.chabasinsk/Desktop/test/file
+|4,48,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
+'1  63  13  ~/.bashrc
+|4,49,63,13,1568872301,"~/.bashrc"
+'2  1  0  /tmp/bash-fc.ga4UvS
+|4,50,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+'3  66  0  ~/.bashrc
+|4,51,66,0,1568872196,"~/.bashrc"
+'4  65  0  ~/.bashrc
+|4,52,65,0,1568872196,"~/.bashrc"
+'5  35  0  ~/.vimrc
+|4,53,35,0,1568872022,"~/.vimrc"
+'6  1  0  /tmp/bash-fc.c6krbW
+|4,54,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+'7  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,55,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+'8  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,56,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+'9  1  34  /tmp/bash-fc.jR6xpM
+|4,57,1,34,1568871648,"/tmp/bash-fc.jR6xpM"
 
 # Jumplist (newest first):
--'  4  8  ~/Bash-DotFiles/.gitignore
-|4,39,4,8,1568635862,"~/Bash-DotFiles/.gitignore"
--'  1  0  ~/Bash-DotFiles/.gitignore
-|4,39,1,0,1568635842,"~/Bash-DotFiles/.gitignore"
--'  5  0  ~/.vimrc
-|4,39,5,0,1568633330,"~/.vimrc"
--'  5  0  ~/.vimrc
-|4,39,5,0,1568633330,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1568633326,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1568633326,"~/.vimrc"
--'  6  0  ~/.vimrc
-|4,39,6,0,1568633323,"~/.vimrc"
--'  6  0  ~/.vimrc
-|4,39,6,0,1568633323,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1568633320,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1568633320,"~/.vimrc"
--'  12  0  ~/.vimrc
-|4,39,12,0,1568633316,"~/.vimrc"
--'  12  0  ~/.vimrc
-|4,39,12,0,1568633316,"~/.vimrc"
--'  11  12  ~/.vimrc
-|4,39,11,12,1568633313,"~/.vimrc"
--'  11  12  ~/.vimrc
-|4,39,11,12,1568633313,"~/.vimrc"
--'  10  16  ~/.vimrc
-|4,39,10,16,1568633289,"~/.vimrc"
--'  3  9  ~/.vimrc
-|4,39,3,9,1568633289,"~/.vimrc"
--'  10  16  ~/.vimrc
-|4,39,10,16,1568633289,"~/.vimrc"
--'  3  9  ~/.vimrc
-|4,39,3,9,1568633289,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1568633105,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1568633105,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1568633102,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1568633102,"~/.vimrc"
--'  21  0  ~/.vimrc
-|4,39,21,0,1568632983,"~/.vimrc"
--'  21  0  ~/.vimrc
-|4,39,21,0,1568632983,"~/.vimrc"
--'  24  0  ~/.vimrc
-|4,39,24,0,1568632982,"~/.vimrc"
--'  24  0  ~/.vimrc
-|4,39,24,0,1568632982,"~/.vimrc"
--'  28  0  ~/.vimrc
-|4,39,28,0,1568632981,"~/.vimrc"
--'  28  0  ~/.vimrc
-|4,39,28,0,1568632981,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1568632978,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1568632978,"~/.vimrc"
--'  20  0  ~/.vimrc
-|4,39,20,0,1568632975,"~/.vimrc"
--'  20  0  ~/.vimrc
-|4,39,20,0,1568632975,"~/.vimrc"
--'  22  0  ~/.vimrc
-|4,39,22,0,1568632972,"~/.vimrc"
--'  22  0  ~/.vimrc
-|4,39,22,0,1568632972,"~/.vimrc"
--'  25  0  ~/.vimrc
-|4,39,25,0,1568632966,"~/.vimrc"
--'  25  0  ~/.vimrc
-|4,39,25,0,1568632966,"~/.vimrc"
--'  18  19  ~/.vimrc
-|4,39,18,19,1568632957,"~/.vimrc"
--'  18  19  ~/.vimrc
-|4,39,18,19,1568632957,"~/.vimrc"
--'  17  0  ~/.vimrc
-|4,39,17,0,1568632956,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1568632956,"~/.vimrc"
--'  13  0  ~/.vimrc
-|4,39,13,0,1568632956,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1568632956,"~/.vimrc"
--'  17  0  ~/.vimrc
-|4,39,17,0,1568632956,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1568632956,"~/.vimrc"
--'  13  0  ~/.vimrc
-|4,39,13,0,1568632956,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1568632956,"~/.vimrc"
--'  7  0  ~/.vimrc
-|4,39,7,0,1568632955,"~/.vimrc"
--'  7  0  ~/.vimrc
-|4,39,7,0,1568632955,"~/.vimrc"
--'  26  0  ~/.vimrc
-|4,39,26,0,1568632954,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1568632954,"~/.vimrc"
--'  26  0  ~/.vimrc
-|4,39,26,0,1568632954,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1568632954,"~/.vimrc"
--'  18  10  ~/.vimrc
-|4,39,18,10,1568632807,"~/.vimrc"
--'  18  10  ~/.vimrc
-|4,39,18,10,1568632807,"~/.vimrc"
--'  24  5  ~/.vimrc
-|4,39,24,5,1568632662,"~/.vimrc"
--'  24  5  ~/.vimrc
-|4,39,24,5,1568632662,"~/.vimrc"
--'  22  0  ~/.vimrc
-|4,39,22,0,1568632578,"~/.vimrc"
--'  22  0  ~/.vimrc
-|4,39,22,0,1568632578,"~/.vimrc"
--'  21  0  ~/.vimrc
-|4,39,21,0,1568632569,"~/.vimrc"
--'  21  0  ~/.vimrc
-|4,39,21,0,1568632569,"~/.vimrc"
--'  20  0  ~/.vimrc
-|4,39,20,0,1568632491,"~/.vimrc"
--'  20  0  ~/.vimrc
-|4,39,20,0,1568632491,"~/.vimrc"
--'  27  12  ~/.vimrc
-|4,39,27,12,1568632466,"~/.vimrc"
--'  27  12  ~/.vimrc
-|4,39,27,12,1568632466,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1568632282,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1568632282,"~/.vimrc"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  72  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,72,0,1568632279,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  57  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,57,0,1568632213,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  74  12  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,74,12,1568632212,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631886,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
--'  65  0  /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-|4,39,65,0,1568631415,"/c/Users/r.chabasinsk/Desktop/test/GridManager.cs"
+-'  2  1  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568872345,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  63  13  ~/.bashrc
+|4,39,63,13,1568872301,"~/.bashrc"
+-'  63  13  ~/.bashrc
+|4,39,63,13,1568872301,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872225,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872225,"~/.bashrc"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /tmp/bash-fc.c6krbW
+|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
 
 # History of marks within files (newest to oldest):
 
-> ~/Bash-DotFiles/.gitignore
-	*	1568635861	0
-	"	4	8
-	^	4	9
-	.	4	8
+> /c/Users/r.chabasinsk/Desktop/test/file
+	*	1568872381	0
+	"	2	1
+	^	2	2
+	.	2	1
+	+	30	0
 	+	1	0
-	+	4	8
+	+	2	1
+
+> ~/.bashrc
+	*	1568872291	0
+	"	63	13
+	^	63	14
+	.	63	13
+	+	10	35
+	+	1	12
+	+	47	32
+	+	14	28
+	+	50	13
+	+	18	13
+	+	19	15
+	+	19	13
+	+	50	14
+	+	16	0
+	+	25	39
+	+	25	37
+	+	11	29
+	+	36	0
+	+	37	0
+	+	36	0
+	+	51	16
+	+	26	13
+	+	33	20
+	+	51	1
+	+	27	11
+	+	29	0
+	+	27	29
+	+	28	0
+	+	28	12
+	+	19	12
+	+	21	0
+	+	22	0
+	+	21	15
+	+	19	20
+	+	30	0
+	+	29	0
+	+	19	21
+	+	20	21
+	+	52	3
+	+	10	19
+	+	52	1
+	+	58	8
+	+	57	33
+	+	53	0
+	+	58	0
+	+	53	0
+	+	58	0
+	+	54	0
+	+	56	0
+	+	54	20
+	+	54	0
+	+	55	0
+	+	56	0
+	+	55	28
+	+	62	22
+	+	14	0
+	+	12	28
+	+	61	0
+	+	59	16
+	+	64	0
+	+	67	0
+	+	65	24
+	+	66	0
+	+	67	0
+	+	63	13
+
+> /tmp/bash-fc.ga4UvS
+	*	1568872217	0
+	"	1	0
 
 > ~/.vimrc
-	*	1568633326	0
-	"	5	0
-	.	2	0
+	*	1568872021	0
+	"	35	0
+	^	34	1
+	.	35	0
 	+	6	6
 	+	9	13
 	+	10	7
@@ -931,50 +996,50 @@ $papiez
 	+	13	0
 	+	14	0
 	+	15	0
-	+	27	0
-	+	28	18
-	+	18	2
+	+	29	0
+	+	30	18
+	+	20	2
 	+	14	3
-	+	18	47
-	+	27	0
-	+	28	0
-	+	27	0
-	+	28	0
-	+	27	0
-	+	28	0
-	+	27	0
-	+	19	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	19	0
-	+	28	0
-	+	21	0
-	+	29	0
-	+	28	0
-	+	29	0
-	+	29	3
-	+	29	4
-	+	29	0
-	+	27	0
-	+	21	0
-	+	29	0
-	+	21	0
-	+	14	0
+	+	20	47
 	+	29	0
 	+	30	0
-	+	21	0
-	+	20	0
-	+	27	0
-	+	21	0
-	+	26	0
+	+	29	0
+	+	30	0
+	+	29	0
+	+	30	0
+	+	29	0
 	+	21	0
 	+	23	0
 	+	22	0
-	+	24	1
-	+	25	1
+	+	23	0
+	+	21	0
+	+	30	0
+	+	23	0
+	+	31	0
+	+	30	0
+	+	31	0
+	+	31	3
+	+	31	4
+	+	31	0
+	+	29	0
+	+	23	0
+	+	31	0
+	+	23	0
+	+	14	0
+	+	31	0
+	+	32	0
+	+	23	0
+	+	22	0
+	+	29	0
+	+	23	0
+	+	28	0
+	+	23	0
+	+	25	0
 	+	24	0
-	+	18	10
+	+	26	1
+	+	27	1
+	+	26	0
+	+	20	10
 	+	12	3
 	+	11	3
 	+	10	3
@@ -984,66 +1049,25 @@ $papiez
 	+	9	0
 	+	6	0
 	+	2	0
+	+	32	18
+	+	17	0
+	+	18	0
+	+	34	0
+	+	35	0
 
-> /usr/share/vim/vim81/doc/change.txt
-	*	1568633280	0
-	"	656	8
-
-> /usr/share/vim/vim81/doc/pattern.txt
-	*	1568633214	0
-	"	70	7
-
-> /usr/share/vim/vim81/doc/various.txt
-	*	1568633190	0
-	"	240	15
-
-> /usr/share/vim/vim81/doc/help.txt
-	*	1568632537	0
+> /tmp/bash-fc.c6krbW
+	*	1568872011	0
 	"	1	0
 
-> /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
-	*	1568632277	0
-	"	72	0
-	.	72	0
-	+	267	0
-	+	270	0
-	+	10	0
-	+	92	0
-	+	15	0
-	+	106	0
-	+	25	0
-	+	108	0
-	+	337	0
-	+	49	0
-	+	65	0
-	+	86	0
-	+	72	0
-
-> /c/Users/r.chabasinsk/Desktop/Fixing/Tizen-CSharp-Samples/Mobile/Weather/Weather/Weather/ViewModels/CurrentWeatherViewModel.cs
-	*	1568631378	0
-	"	314	9
-	.	157	0
-	+	157	0
-
-> /c/Users/r.chabasinsk/Desktop/test/AddLogs
-	*	1568630915	0
-	"	1	0
-	.	2	0
-	+	1	150
-	+	2	0
-
-> /usr/share/vim/vim81/doc/eval.txt
-	*	1568629790	0
-	"	8451	6
-
-> /c/Users/r.chabasinsk/Desktop/test/comm
-	*	1568628059	0
-	"	1	0
-	.	1	0
-	+	1	0
+> /tmp/bash-fc.jR6xpM
+	*	1568871642	0
+	"	1	34
+	^	1	35
+	.	1	35
+	+	1	35
 
 > /c/Users/r.chabasinsk/Desktop/test/temp
-	*	1568627218	0
+	*	1568871485	0
 	"	58	0
 	^	65	0
 	.	1	0
@@ -1104,66 +1128,207 @@ $papiez
 	+	66	0
 	+	1	0
 
+> /tmp/bash-fc.f9GBtL
+	*	1568871152	0
+	"	1	25
+	^	1	26
+	.	1	25
+	+	1	25
+
+> /c/Users/r.chabasinsk/Desktop/examples/texture.glsl
+	*	1568786791	0
+	"	23	29
+	^	23	30
+	.	23	29
+	+	21	0
+	+	22	0
+	+	23	29
+
+> /c/Users/r.chabasinsk/Desktop/Fixing/Tizen-CSharp-Samples/file
+	*	1568779902	0
+	"	698	17
+
+> /c/Users/r.chabasinsk/Desktop/test/Tetris/*.cs
+	*	1568715721	0
+	"	1	0
+
+> /c/Users/r.chabasinsk/Desktop/test/test
+	*	1568713032	0
+	"	7	0
+	^	7	7
+	.	4	0
+	+	1	0
+	+	2	21
+	+	4	28
+	+	5	7
+	+	7	6
+	+	4	0
+
+> /usr/share/vim/vim81/doc/change.txt
+	*	1568712236	0
+	"	1177	36
+
+> /c/Users/r.chabasinsk/Desktop/test/te
+	*	1568712102	0
+	"	1	0
+
+> ~/file
+	*	1568701987	0
+	"	22	44
+	^	22	45
+	.	22	38
+	+	5	9
+	+	5	33
+	+	5	13
+	+	4	13
+	+	5	7
+	+	5	8
+	+	8	4
+	+	5	17
+	+	5	34
+	+	5	27
+	+	4	20
+	+	5	48
+	+	5	0
+	+	6	20
+	+	5	40
+	+	7	15
+	+	5	48
+	+	6	36
+	+	7	3
+	+	5	0
+	+	4	0
+	+	6	0
+	+	10	0
+	+	11	31
+	+	16	0
+	+	5	0
+	+	16	1
+	+	13	0
+	+	12	0
+	+	13	0
+	+	1	0
+	+	2	0
+	+	4	0
+	+	16	51
+	+	16	7
+	+	16	0
+	+	17	0
+	+	16	7
+	+	17	5
+	+	18	5
+	+	19	6
+	+	20	10
+	+	22	28
+	+	23	5
+	+	24	6
+	+	17	11
+	+	14	8
+	+	12	6
+	+	13	13
+	+	24	10
+	+	25	10
+	+	26	18
+	+	27	0
+	+	25	4
+	+	28	11
+	+	24	12
+	+	22	18
+	+	14	4
+	+	17	7
+	+	29	8
+	+	25	18
+	+	24	26
+	+	30	3
+	+	31	8
+	+	28	8
+	+	26	18
+	+	24	10
+	+	23	12
+	+	22	38
+
+> /usr/share/vim/vim81/doc/help.txt
+	*	1568699980	0
+	"	1	0
+
+> ~/xd
+	*	1568699154	0
+	"	1	0
+
+> ~/inba
+	*	1568698915	0
+	"	1	0
+
+> ~/aleinba
+	*	1568698887	0
+	"	1	0
+
+> /c/Users/r.chabasinsk/Desktop/applications/CalendarWearable/CalendarWearable/Models/CalendarModel.cs
+	*	1568697201	0
+	"	85	12
+	.	83	0
+	+	83	0
+
+> ~/Bash-DotFiles/.gitignore
+	*	1568635861	0
+	"	4	8
+	^	4	9
+	.	4	8
+	+	1	0
+	+	4	8
+
+> /usr/share/vim/vim81/doc/pattern.txt
+	*	1568633214	0
+	"	70	7
+
+> /usr/share/vim/vim81/doc/various.txt
+	*	1568633190	0
+	"	240	15
+
+> /c/Users/r.chabasinsk/Desktop/test/GridManager.cs
+	*	1568632277	0
+	"	72	0
+	.	72	0
+	+	267	0
+	+	270	0
+	+	10	0
+	+	92	0
+	+	15	0
+	+	106	0
+	+	25	0
+	+	108	0
+	+	337	0
+	+	49	0
+	+	65	0
+	+	86	0
+	+	72	0
+
+> /c/Users/r.chabasinsk/Desktop/Fixing/Tizen-CSharp-Samples/Mobile/Weather/Weather/Weather/ViewModels/CurrentWeatherViewModel.cs
+	*	1568631378	0
+	"	314	9
+	.	157	0
+	+	157	0
+
+> /c/Users/r.chabasinsk/Desktop/test/AddLogs
+	*	1568630915	0
+	"	1	0
+	.	2	0
+	+	1	150
+	+	2	0
+
+> /usr/share/vim/vim81/doc/eval.txt
+	*	1568629790	0
+	"	8451	6
+
+> /c/Users/r.chabasinsk/Desktop/test/comm
+	*	1568628059	0
+	"	1	0
+	.	1	0
+	+	1	0
+
 > /usr/share/vim/vim81/doc/insert.txt
 	*	1568627206	0
 	"	1845	43
-
-> ~/.bashrc
-	*	1568625336	0
-	"	60	22
-	^	60	22
-	.	60	22
-	+	10	35
-	+	1	12
-	+	46	32
-	+	13	28
-	+	49	13
-	+	17	13
-	+	18	15
-	+	18	13
-	+	49	14
-	+	15	0
-	+	24	39
-	+	24	37
-	+	11	29
-	+	35	0
-	+	36	0
-	+	35	0
-	+	50	16
-	+	25	13
-	+	32	20
-	+	50	1
-	+	26	11
-	+	28	0
-	+	26	29
-	+	27	0
-	+	27	12
-	+	18	12
-	+	20	0
-	+	21	0
-	+	20	15
-	+	18	20
-	+	29	0
-	+	28	0
-	+	18	21
-	+	19	21
-	+	51	3
-	+	10	19
-	+	51	1
-	+	57	8
-	+	56	33
-	+	52	0
-	+	57	0
-	+	52	0
-	+	57	0
-	+	53	0
-	+	55	0
-	+	53	20
-	+	53	0
-	+	54	0
-	+	55	0
-	+	54	28
-	+	60	22
 
 > /c/Users/r.chabasinsk/Desktop/test/xd
 	*	1568625067	0
@@ -1292,15 +1457,6 @@ $papiez
 	+	3	0
 	+	1	20
 
-> /c/Users/r.chabasinsk/Desktop/test/test
-	*	1568290232	0
-	"	4	28
-	^	4	29
-	.	4	28
-	+	1	0
-	+	2	21
-	+	4	28
-
 > /c/Users/r.chabasinsk/Desktop/test/for.sh
 	*	1568269601	0
 	"	2	0
@@ -1404,12 +1560,6 @@ $papiez
 > ~./bashrc
 	*	1568182815	0
 	"	1	0
-
-> /c/Users/r.chabasinsk/Desktop/test/file
-	*	1568182735	0
-	"	45	0
-	.	46	0
-	+	46	0
 
 > /c/Users/r.chabasinsk/Desktop/test/ale-inba
 	*	1568181747	0

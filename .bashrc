@@ -9,6 +9,7 @@ alias br='git branch'
 alias check='git checkout'
 alias acom='git add .;git commit -sm'
 alias cherry='git cherry-pick'
+alias aap='add; amend; push;'
 
 alias h='history | tail -n 12'
 alias gr='grep -iRP --color'
@@ -55,6 +56,11 @@ alias clean='rm `f ".*sw[op]"`'
 
 # Suspending flow control in shell
 stty -ixon
+stty stop 'undef'
 # Bashrc, vimrc shortcuts
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
+alias .brc='. ~/.bashrc'
+
+# Fancy useful functions
+range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
