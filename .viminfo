@@ -21,7 +21,7 @@ $?
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1568872382,,"x"
+|2,0,1568872894,,"x"
 :!range 7 10 file
 |2,0,1568872354,,"!range 7 10 file"
 :reg f
@@ -677,36 +677,52 @@ $?
 |3,1,36,0,1,0,1568872380,"1"
 
 # File marks:
-'0  2  1  /c/Users/r.chabasinsk/Desktop/test/file
-|4,48,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
-'1  63  13  ~/.bashrc
-|4,49,63,13,1568872301,"~/.bashrc"
-'2  1  0  /tmp/bash-fc.ga4UvS
-|4,50,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
-'3  66  0  ~/.bashrc
-|4,51,66,0,1568872196,"~/.bashrc"
-'4  65  0  ~/.bashrc
-|4,52,65,0,1568872196,"~/.bashrc"
-'5  35  0  ~/.vimrc
-|4,53,35,0,1568872022,"~/.vimrc"
-'6  1  0  /tmp/bash-fc.c6krbW
-|4,54,1,0,1568872014,"/tmp/bash-fc.c6krbW"
-'7  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,55,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+'0  5  13  ~/.gitignore
+|4,48,5,13,1568872895,"~/.gitignore"
+'1  2  1  /c/Users/r.chabasinsk/Desktop/test/file
+|4,49,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
+'2  63  13  ~/.bashrc
+|4,50,63,13,1568872301,"~/.bashrc"
+'3  1  0  /tmp/bash-fc.ga4UvS
+|4,51,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+'4  66  0  ~/.bashrc
+|4,52,66,0,1568872196,"~/.bashrc"
+'5  65  0  ~/.bashrc
+|4,53,65,0,1568872196,"~/.bashrc"
+'6  35  0  ~/.vimrc
+|4,54,35,0,1568872022,"~/.vimrc"
+'7  1  0  /tmp/bash-fc.c6krbW
+|4,55,1,0,1568872014,"/tmp/bash-fc.c6krbW"
 '8  1  0  /c/Users/r.chabasinsk/Desktop/test/file
 |4,56,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
-'9  1  34  /tmp/bash-fc.jR6xpM
-|4,57,1,34,1568871648,"/tmp/bash-fc.jR6xpM"
+'9  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,57,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
 
 # Jumplist (newest first):
+-'  5  13  ~/.gitignore
+|4,39,5,13,1568872895,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1568872888,"~/.gitignore"
 -'  2  1  /c/Users/r.chabasinsk/Desktop/test/file
 |4,39,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  2  1  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,2,1,1568872382,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
+|4,39,1,0,1568872345,"/c/Users/r.chabasinsk/Desktop/test/file"
 -'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
 |4,39,1,0,1568872345,"/c/Users/r.chabasinsk/Desktop/test/file"
 -'  63  13  ~/.bashrc
 |4,39,63,13,1568872301,"~/.bashrc"
 -'  63  13  ~/.bashrc
 |4,39,63,13,1568872301,"~/.bashrc"
+-'  63  13  ~/.bashrc
+|4,39,63,13,1568872301,"~/.bashrc"
+-'  63  13  ~/.bashrc
+|4,39,63,13,1568872301,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872225,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872225,"~/.bashrc"
 -'  66  0  ~/.bashrc
 |4,39,66,0,1568872225,"~/.bashrc"
 -'  66  0  ~/.bashrc
@@ -719,6 +735,22 @@ $?
 |4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
 -'  1  0  /tmp/bash-fc.ga4UvS
 |4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  1  0  /tmp/bash-fc.ga4UvS
+|4,39,1,0,1568872222,"/tmp/bash-fc.ga4UvS"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
+-'  65  0  ~/.bashrc
+|4,39,65,0,1568872196,"~/.bashrc"
 -'  65  0  ~/.bashrc
 |4,39,65,0,1568872196,"~/.bashrc"
 -'  65  0  ~/.bashrc
@@ -740,6 +772,22 @@ $?
 -'  66  0  ~/.bashrc
 |4,39,66,0,1568872108,"~/.bashrc"
 -'  67  0  ~/.bashrc
+|4,39,67,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  66  0  ~/.bashrc
+|4,39,66,0,1568872108,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
 |4,39,67,0,1568872094,"~/.bashrc"
 -'  67  0  ~/.bashrc
 |4,39,67,0,1568872094,"~/.bashrc"
@@ -747,6 +795,10 @@ $?
 |4,39,67,0,1568872094,"~/.bashrc"
 -'  67  0  ~/.bashrc
 |4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
+-'  67  0  ~/.bashrc
+|4,39,67,0,1568872094,"~/.bashrc"
 -'  62  16  ~/.bashrc
 |4,39,62,16,1568872032,"~/.bashrc"
 -'  62  16  ~/.bashrc
@@ -759,6 +811,30 @@ $?
 |4,39,62,16,1568872032,"~/.bashrc"
 -'  62  16  ~/.bashrc
 |4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  62  16  ~/.bashrc
+|4,39,62,16,1568872032,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
+-'  59  16  ~/.bashrc
+|4,39,59,16,1568872025,"~/.bashrc"
 -'  59  16  ~/.bashrc
 |4,39,59,16,1568872025,"~/.bashrc"
 -'  59  16  ~/.bashrc
@@ -803,104 +879,35 @@ $?
 |4,39,35,0,1568872022,"~/.vimrc"
 -'  35  0  ~/.vimrc
 |4,39,35,0,1568872022,"~/.vimrc"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /tmp/bash-fc.c6krbW
-|4,39,1,0,1568872014,"/tmp/bash-fc.c6krbW"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
--'  1  0  /c/Users/r.chabasinsk/Desktop/test/file
-|4,39,1,0,1568871974,"/c/Users/r.chabasinsk/Desktop/test/file"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1568872022,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1568872894	0
+	"	5	13
+	^	5	14
+	.	5	12
+	+	5	12
 
 > /c/Users/r.chabasinsk/Desktop/test/file
 	*	1568872381	0
