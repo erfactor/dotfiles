@@ -30,7 +30,7 @@ alias v='vim'
 # History
 shopt -s histreedit
 shopt -u histverify
-export HISTIGNORE="&"
+export HISTIGNORE="&:[ ]*"
 export HISTSIZE=1500
 export HISTFILESIZE=1500
 export D=C:/Users/r.chabasinsk/Desktop
@@ -46,8 +46,6 @@ alias c7='awk '\''{print $7}'\'''
 alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
-#Prompt
-export PS1="\t \$ "
 #set -o noclobber
 # c $D
 
@@ -64,3 +62,9 @@ alias .brc='. ~/.bashrc'
 
 # Fancy useful functions
 range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
+
+# Setting path variable for my own scripts
+PATH=$PATH:/c/Users/r.chabasinsk/myscripts
+
+# Fancy prompt look
+export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
