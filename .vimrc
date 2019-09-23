@@ -33,3 +33,9 @@ nnoremap <space> @q
 " Commands
 command! -nargs=? Filter let @a='' | execute 'g/<args>/y A' | new | setlocal bt=nofile | put! a
 nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
+
+"Registers
+let @r='%s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),''\v\n.*\{'','''',''g'') . "\");"'
+"Mein Commanden
+command! Logs %s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");"
+command! Inba %s/a/x/g
