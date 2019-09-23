@@ -61,7 +61,7 @@ alias brc='vim ~/.bashrc'
 alias .brc='. ~/.bashrc'
 
 # Fancy useful functions
-range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
+#range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
 
 # Setting path variable for my own scripts
 PATH=$PATH:/c/Users/r.chabasinsk/myscripts
