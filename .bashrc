@@ -68,3 +68,6 @@ PATH=$PATH:/c/Users/r.chabasinsk/myscripts
 
 # Fancy prompt look
 export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
+
+#Add logs to file
+alias Log='v -c "Logs" -c "x"'
