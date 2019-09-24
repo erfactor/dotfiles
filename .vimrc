@@ -12,10 +12,10 @@ set shiftwidth=4
 set expandtab
 
 " Use very magic and case insensitive search patterns
-nnoremap / /\v\c
-vnoremap / /\v\c
-nnoremap ? ?\v\c
-vnoremap ? ?\v\c
+nnoremap / /\v
+vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ? ?\v
 
 " Indenting stuff. Remember about 'set shiftwidth'
 vnoremap > >gv
@@ -39,3 +39,25 @@ let @r='%s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen
 "Mein Commanden
 command! Logs %s/\v\c(public|private|protected).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");"
 command! Inba %s/a/x/g
+
+" Very useful functions
+nnoremap <c-q> :x<cr>
+set nocompatible
+set hidden
+syntax on
+filetype indent plugin on
+set wildmenu
+set showcmd
+set ignorecase
+set smartcase
+set backspace=indent,eol,start
+set autoindent
+set nostartofline
+set ruler
+set laststatus=2
+set confirm
+set mouse=a
+set visualbell
+set t_vb=
+set cmdheight=2
+map D dd
