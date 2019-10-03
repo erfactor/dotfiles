@@ -4,12 +4,13 @@ alias log='git log -8 --oneline'
 alias add='git add .'
 alias com='git commit -sm'
 alias amend='git commit --amend --no-edit'
-alias push='git push origin HEAD:refs/for/release'
+alias push='git push'
 alias br='git branch'
 alias check='git checkout'
 alias acom='git add .;git commit -sm'
 alias cherry='git cherry-pick'
 alias aap='add; amend; push;'
+alias gd='git diff'
 
 alias h='history | tail -n 12'
 alias gr='grep -iRP --color'
@@ -27,6 +28,7 @@ alias hg='history | grep -iP --color'
 alias p='pwd'
 alias fds='ls -la /proc/$$/fd'
 alias v='vim'
+alias de='lastdir=$PWD;cd $D'
 
 # History
 shopt -s histreedit
@@ -34,7 +36,7 @@ shopt -u histverify
 export HISTIGNORE="&:[ ]*"
 export HISTSIZE=1500
 export HISTFILESIZE=1500
-export D=C:/Users/r.chabasinsk/Desktop
+export D=C:/Users/$USERNAME/Desktop
 
 # Extract columns
 alias c1='awk '\''{print $1}'\'''
@@ -65,7 +67,7 @@ alias .brc='. ~/.bashrc'
 #range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
 
 # Setting path variable for my own scripts
-PATH=$PATH:/c/Users/r.chabasinsk/myscripts
+PATH=$PATH:/c/Users/$USERNAME/myscripts
 
 # Fancy prompt look
 export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
