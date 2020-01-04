@@ -16,6 +16,15 @@ nnoremap / /\v
 vnoremap / /\v
 nnoremap ? ?\v
 vnoremap ? ?\v
+nnoremap } /\v^\s*$<cr>:nohl<cr>
+nnoremap { ?\v^\s*$<cr>:nohl<cr>
+vmap y ygv<esc>
+
+" Rider helpers
+nnoremap mw dawbhPw
+inoremap ; <end>;
+nnoremap ms 2jS
+nnoremap ma 2jA
 
 " Indenting stuff. Remember about 'set shiftwidth'
 vnoremap > >gv

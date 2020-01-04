@@ -5,6 +5,7 @@ alias add='git add .'
 alias com='git commit -sm'
 alias amend='git commit --amend --no-edit'
 alias push='git push'
+alias pull='git pull'
 alias br='git branch'
 alias check='git checkout'
 alias acom='git add .;git commit -sm'
@@ -29,13 +30,17 @@ alias p='pwd'
 alias fds='ls -la /proc/$$/fd'
 alias v='vim'
 alias de='lastdir=$PWD;cd $D'
+alias dot='dotnet'
+alias dotgen='dot aspnet-codegenerator'
+alias dwr='dot watch run &'
+alias kil='kill -9 '
 
 # History
 shopt -s histreedit
 shopt -u histverify
 export HISTIGNORE="&:[ ]*"
-export HISTSIZE=1500
-export HISTFILESIZE=1500
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 export D=C:/Users/$USERNAME/Desktop
 
 # Extract columns
