@@ -1,2 +1,8 @@
 BackgroundColour=22,22,22
 ForegroundColour=255,222,173
+Font=Consolas
+FontHeight=14
+FontSmoothing=full
+Columns=100
+Rows=40
+PgUpDnScroll=yes
