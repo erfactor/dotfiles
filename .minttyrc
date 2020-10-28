@@ -4,5 +4,5 @@ Font=Consolas
 FontHeight=14
 FontSmoothing=full
 Columns=100
-Rows=40
+Rows=35
 PgUpDnScroll=yes
