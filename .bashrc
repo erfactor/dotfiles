@@ -17,7 +17,8 @@ alias add='git add .'
 alias com='git commit -sm'
 alias amend='git commit --amend --no-edit'
 alias ps='git push'
-alias psu='ps --set-upstream origin `br --show-current`'
+alias currentBranch='git branch --show-current'
+alias psu='ps --set-upstream origin `currentBranch`'
 alias pl='git pull --rebase'
 alias fc='git fetch'
 alias ln="awk '{print NR \":\" \$0}'"
@@ -26,12 +27,12 @@ alias bra='git fetch; git branch -a | ln'
 alias deleteBranch='git branch -D'
 numberRegex='^[0-9]+$'
 brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; }
-alias ck='lastBranch=`br --show-current`; git checkout'
+alias ck='lastBranch=`currentBranch`; git checkout'
 ckp(){ ck $1; pl; }
 alias ckm='ckp master'
 alias ckb='ck -b'
 alias ac='git add .;git commit -sm'
-alias back='tempBranch=`br --show-current`; git checkout $lastBranch; lastBranch=$tempBranch'
+alias back='tempBranch=`currentBranch`; git checkout $lastBranch; lastBranch=$tempBranch'
 acp(){ git add .; git commit -sm "$1"; ps; }
 acpu(){ git add .; git commit -sm "$1"; psu; }
 alias cherry='git cherry-pick'
