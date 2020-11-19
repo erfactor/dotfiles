@@ -3,4 +3,4 @@
 - .bash_profile
 - .bashrc 
 
-Clone it into your $HOME folder and run udpate.sh
+Clone it into your $HOME folder and run update.sh
