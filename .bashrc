@@ -28,7 +28,7 @@ alias bra='git fetch; git branch -a | ln'
 alias deleteBranch='git branch -D'
 numberRegex='^[0-9]+$'
 brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; }
-alias ck='lastBranch=`currentBranch`; git checkout'
+ck(){ if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1`; else git checkout $1; fi; }
 ckp(){ ck $1; pl; }
 alias ckm='ckp master'
 alias ckb='ck -b'
