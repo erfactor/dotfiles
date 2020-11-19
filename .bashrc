@@ -26,14 +26,17 @@ alias ln="awk '{print NR \":\" \$0}'"
 alias br='git branch | ln'
 alias bra='git fetch; git branch -a | ln'
 alias deleteBranch='git branch -D'
+alias saveLastBranch='lastBranch=`currentBranch`'
+alias createTempBranch='tempBranch=`currentBranch`'
+alias saveTempBranch='lastBranch=$tempBranch'
 numberRegex='^[0-9]+$'
 brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; }
-ck(){ if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1`; else git checkout $1; fi; }
+ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
 alias ckm='ckp master'
-alias ckb='ck -b'
+alias ckb='saveLastBranch; git checkout -b'
 alias ac='git add .;git commit -sm'
-alias back='tempBranch=`currentBranch`; git checkout $lastBranch; lastBranch=$tempBranch'
+alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
 acp(){ git add .; git commit -sm "$1"; ps; }
 acpu(){ git add .; git commit -sm "$1"; psu; }
 alias cherry='git cherry-pick'
