@@ -33,8 +33,8 @@ nnoremap ms 2jS
 nnoremap ma 2jA
 nnoremap md V$h/{<enter>%ok
 nnoremap mc Bv$?[\{\(\[]<enter>%o
-nnoremap <c-j> 5j
-nnoremap <c-k> 5k
+noremap <c-j> 5j
+noremap <c-k> 5k
 
 " Indenting stuff. Remember about 'set shiftwidth'
 vnoremap > >gv
