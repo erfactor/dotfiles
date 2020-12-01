@@ -21,6 +21,7 @@ alias currentBranch='git branch --show-current'
 alias psu='ps --set-upstream origin `currentBranch`'
 alias pl='git pull'
 alias plr='git pull --rebase'
+alias cont='git rebase --continue'
 alias fc='git fetch'
 alias ln="awk '{print NR \":\" \$0}'"
 alias br='git branch | ln'
