@@ -5,6 +5,9 @@ alias vrc='vim ~/BashFiles/.vimrc'
 # Windows stuff
 alias r='dot run'
 alias exp='explorer .'
+# Flutter stuff
+alias run='flutter pub run build_runner build --delete-conflicting-outputs'
+alias runw='flutter pub run build_runner watch'
 # Git aliases
 alias res='git reset --hard'
 alias ress='git reset'
@@ -13,7 +16,7 @@ alias st='git status'
 alias lg='clear; git log -8 --pretty=format:"%h%x09%an%x09%ad%x09%s"'
 alias lgo='clear; git log -8 --oneline'
 alias lgg='lg --graph'
-alias add='git add .'
+alias add='git add .; git restore --staged yookos-protocol'
 alias com='git commit -sm'
 alias amend='git commit --amend --no-edit'
 alias ps='git push'
@@ -35,11 +38,12 @@ brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | t
 ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
 alias ckm='ckp master'
+alias ckd='ckp dev'
 alias ckb='saveLastBranch; git checkout -b'
-alias ac='git add .;git commit -sm'
 alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
-acp(){ git add .; git commit -sm "$1"; ps; }
-acpu(){ git add .; git commit -sm "$1"; psu; }
+alias ac='add; com'
+acp(){ ac "$1"; ps; }
+acpu(){ ac "$1"; psu; }
 alias cherry='git cherry-pick'
 alias merge='git merge'
 alias mm='ck master; pl; back; git merge master'
@@ -48,7 +52,6 @@ alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
 
 alias g='grep -iIE --color'
-# alias g='grep -iP --color'
 alias gr='g -R'
 alias h='history | tail -n 12'
 alias f='find -iregex'
@@ -63,7 +66,7 @@ alias l='ls -a'
 alias ll='ls -alh'
 alias h10='head -10'
 alias t10='tail -10'
-alias hg='history | grep -iP --color'
+alias hg='history | g'
 alias p='pwd'
 alias fds='ls -la /proc/$$/fd'
 alias v='vim'
