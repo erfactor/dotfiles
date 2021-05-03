@@ -45,8 +45,11 @@ inoremap <S-Tab> <C-D>
 vmap <Tab> >
 vmap <S-Tab> <
 
+" Flutter helpers
+nnoremap mim migg}Oimport 'package:flutter/material.dart';<esc>`i
+nnoremap mix migg}Oimport 'package:dartx/dartx.dart';<esc>`i
+
 " Fancy mappings
-inoremap <c-p> print("");<esc>2hi
 nnoremap <space> @q
 " Commands
 command! -nargs=? Filter let @a='' | execute 'g/<args>/y A' | new | setlocal bt=nofile | put! a
