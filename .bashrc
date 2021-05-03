@@ -1,3 +1,6 @@
+# Case insensitive terminal
+bind "set completion-ignore-case on"
+bind "set show-all-if-amigious on"
 # Updating bash files. Bashrc, vimrc shortcuts
 alias update='source ~/BashFiles/update.sh'
 alias brc='vim ~/BashFiles/.bashrc; update'
@@ -34,6 +37,7 @@ alias fc='git fetch'
 alias ln="awk '{print NR \":\" \$0}'"
 alias br='git branch | ln'
 alias bra='git fetch; git branch -a | ln'
+alias brag='bra | g'
 alias deleteBranch='git branch -D'
 alias saveLastBranch='lastBranch=`currentBranch`'
 alias createTempBranch='tempBranch=`currentBranch`'
@@ -51,7 +55,9 @@ acp(){ ac "$1"; ps; }
 acpu(){ ac "$1"; psu; }
 alias cherry='git cherry-pick'
 alias merge='git merge'
-alias mm='ck master; pl; back; git merge master'
+alias md='merge dev'
+alias mmd='ckd; back; md'
+alias mm='ckp master; back; git merge master'
 alias aap='add; amend; push;'
 alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
@@ -100,7 +106,6 @@ alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
 #set -o noclobber
-# c $D
 
 # Cleaning swp files
 alias clean='rm `f ".*sw[op]"`'
