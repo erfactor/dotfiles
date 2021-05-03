@@ -120,8 +120,14 @@ stty stop 'undef'
 # Setting path variable for my own scripts
 PATH=$PATH:/c/Users/$USERNAME/myscripts
 
-# Fancy prompt look
-export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
+# Prompt
+# \t for time
+# export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
+
+git_branch() {
+ currentBranch 2> /dev/null | awk '{print " ("$1")"}'
+}
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
 #Add logs to file
 alias Log='v -c "Logs" -c "x"'
