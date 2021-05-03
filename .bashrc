@@ -8,6 +8,7 @@ alias exp='explorer .'
 # Flutter stuff
 alias run='flutter pub run build_runner build --delete-conflicting-outputs'
 alias runw='flutter pub run build_runner watch'
+alias pg='flutter pub get'
 # Git aliases
 alias res='git reset --hard'
 alias ress='git reset'
