@@ -1,6 +1,6 @@
 # Case insensitive terminal
 bind "set completion-ignore-case on"
-bind "set show-all-if-amigious on"
+bind "set show-all-if-ambiguous on"
 # Updating bash files. Bashrc, vimrc shortcuts
 alias update='source ~/BashFiles/update.sh'
 alias brc='vim ~/BashFiles/.bashrc; update'
