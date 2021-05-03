@@ -36,8 +36,7 @@ alias cont='git rebase --continue'
 alias fc='git fetch'
 alias ln="awk '{print NR \":\" \$0}'"
 alias br='git branch | ln'
-alias bra='git fetch; git branch -a | ln'
-alias brag='bra | g'
+bra(){ fc; if [[ -z $1 ]]; then git branch -a | ln; else git branch -a | ln | g $1; fi; }
 alias deleteBranch='git branch -D'
 alias saveLastBranch='lastBranch=`currentBranch`'
 alias createTempBranch='tempBranch=`currentBranch`'
@@ -45,6 +44,7 @@ alias saveTempBranch='lastBranch=$tempBranch'
 numberRegex='^[0-9]+$'
 brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; }
 ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
+cka(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch -a | head -$1 | tail -1 | sed 's/remotes\/origin\///'` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
 alias ckm='ckp master'
 alias ckd='ckp dev'
@@ -75,8 +75,8 @@ alias home='c $HOME'
 alias bf='c $HOME/BashFiles'
 alias ..='c ..'
 
-alias l='ls -a'
-alias ll='ls -alh'
+alias l='ls -AG'
+alias ll='l -lh'
 alias h10='head -10'
 alias t10='tail -10'
 alias hg='history | g'
