@@ -19,7 +19,7 @@ alias fcr='flutter pub cache repair'
 alias res='git reset --hard'
 alias ress='git reset'
 alias cl='git clone'
-alias st='git status'
+alias st='clear; git status'
 alias lg='clear; git log -8 --pretty=format:"%h%x09%an%x09%ad%x09%s"'
 alias lgo='clear; git log -8 --oneline'
 alias lgg='lg --graph'
@@ -35,7 +35,7 @@ alias plr='git pull --rebase'
 alias cont='git rebase --continue'
 alias fc='git fetch'
 alias ln="awk '{print NR \":\" \$0}'"
-alias br='git branch | ln'
+alias br='clear; git branch | ln'
 bra(){ fc; if [[ -z $1 ]]; then git branch -a | ln; else git branch -a | ln | g $1; fi; }
 alias deleteBranch='git branch -D'
 alias saveLastBranch='lastBranch=`currentBranch`'
@@ -120,7 +120,7 @@ stty stop 'undef'
 #range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
 
 # Setting path variable for my own scripts
-PATH=$PATH:/c/Users/$USERNAME/myscripts
+PATH=$PATH:/c/Users/$USERNAME/myscripts:$HOME/src/flutter/bin
 
 # Prompt
 # \t for time
