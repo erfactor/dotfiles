@@ -31,8 +31,8 @@ map U uuu
 nnoremap mw dawea<space><esc>p
 nnoremap ms 2jS
 nnoremap ma 2jA
-nnoremap md V$h/{<enter>%ok
-nnoremap mc Bv$?[\{\(\[]<enter>%o
+nnoremap md V$?[\{\(\[]<enter>%o^
+nnoremap mc v%o
 noremap <c-j> 5j
 noremap <c-k> 5k
 

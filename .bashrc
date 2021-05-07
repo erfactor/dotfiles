@@ -42,7 +42,7 @@ alias saveLastBranch='lastBranch=`currentBranch`'
 alias createTempBranch='tempBranch=`currentBranch`'
 alias saveTempBranch='lastBranch=$tempBranch'
 numberRegex='^[0-9]+$'
-brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; }
+brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | tail -1`; else deleteBranch $1; fi; br; }
 ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 cka(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch -a | head -$1 | tail -1 | sed 's/remotes\/origin\///'` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
