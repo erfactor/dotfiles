@@ -120,7 +120,7 @@ stty stop 'undef'
 #range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
 
 # Setting path variable for my own scripts
-PATH=$PATH:/c/Users/$USERNAME/myscripts:$HOME/src/flutter/bin
+PATH=$PATH:/c/Users/$USERNAME/myscripts:$HOME/src/flutter/bin:$HOME/src
 
 # Prompt
 # \t for time

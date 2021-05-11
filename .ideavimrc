@@ -46,8 +46,10 @@ vmap <Tab> >
 vmap <S-Tab> <
 
 " Flutter helpers
-nnoremap mim migg}Oimport 'package:flutter/material.dart';<esc>`i
-nnoremap mix migg}Oimport 'package:dartx/dartx.dart';<esc>`i
+nnoremap mim miggOimport 'package:flutter/material.dart';<esc>`i
+nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
+nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
+nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
 
 " Fancy mappings
 nnoremap <space> @q
