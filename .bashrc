@@ -15,6 +15,26 @@ alias fpg='flutter pub get'
 alias fcl='flutter clean'
 alias fcr='flutter pub cache repair'
 
+# Simple
+alias l='ls -AG'
+alias ll='l -lh'
+alias p='pwd'
+alias v='vim'
+alias h='history | tail -n 12'
+alias hg='history | g'
+alias f='find -iregex'
+alias e='echo'
+alias g='grep -iIE --color'
+alias gr='g -R'
+
+# cd
+alias c='lastDir=$PWD; cd'
+alias b='tempDir=$PWD; cd $lastDir; lastDir=$tempDir'
+alias de='c $Desktop'
+alias home='c $HOME'
+alias bf='c $HOME/BashFiles'
+alias ..='c ..'
+
 # Git aliases
 alias res='git reset --hard'
 alias ress='git reset'
@@ -62,27 +82,11 @@ alias aap='add; amend; push;'
 alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
 
-alias g='grep -iIE --color'
-alias gr='g -R'
-alias h='history | tail -n 12'
-alias f='find -iregex'
-alias e='echo'
-# cd
-alias c='lastDir=$PWD; cd'
-alias b='tempDir=$PWD; cd $lastDir; lastDir=$tempDir'
-alias de='c $Desktop'
-alias home='c $HOME'
-alias bf='c $HOME/BashFiles'
-alias ..='c ..'
 
-alias l='ls -AG'
-alias ll='l -lh'
+#Auxiliary
 alias h10='head -10'
 alias t10='tail -10'
-alias hg='history | g'
-alias p='pwd'
 alias fds='ls -la /proc/$$/fd'
-alias v='vim'
 alias dot='dotnet'
 alias dotgen='dot aspnet-codegenerator'
 alias dwr='dot watch run &'
@@ -119,8 +123,8 @@ stty stop 'undef'
 # Fancy useful functions
 #range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
 
-# Setting path variable for my own scripts
-PATH=$PATH:/c/Users/$USERNAME/myscripts:$HOME/src/flutter/bin:$HOME/src
+# PATH
+PATH=$PATH:$HOME/myscripts:$HOME/src/flutter/bin:/c/src
 
 # Prompt
 # \t for time
