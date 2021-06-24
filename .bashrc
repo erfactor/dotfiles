@@ -36,8 +36,8 @@ alias bf='c $HOME/BashFiles'
 alias ..='c ..'
 
 # Git aliases
-alias res='git reset --hard'
-alias ress='git reset'
+alias rs='git reset --hard'
+alias rss='git reset'
 alias cl='git clone'
 alias st='clear; git status'
 alias lg='clear; git log -8 --pretty=format:"%h%x09%an%x09%ad%x09%s"'
