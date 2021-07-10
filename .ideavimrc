@@ -21,7 +21,10 @@ nnoremap ? ?\v
 vnoremap ? ?\v
 nnoremap } /\v^\s*$<cr>
 nnoremap { ?\v^\s*$<cr>
-vmap y ygv<esc>
+vnoremap y ygv<esc>
+
+vnoremap my "+y
+vnoremap mp "+p
 
 map D dd
 map Z zz
@@ -49,6 +52,7 @@ vmap <S-Tab> <
 nnoremap mim miggOimport 'package:flutter/material.dart';<esc>`i
 nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
 nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
+nnoremap mie miggOimport 'package:yookos/extensions/yookos_extensions.dart';<esc>`i
 nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
 
 " Fancy mappings

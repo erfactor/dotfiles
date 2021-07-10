@@ -21,7 +21,10 @@ nnoremap ? ?\v
 vnoremap ? ?\v
 nnoremap } /\v^\s*$<cr>
 nnoremap { ?\v^\s*$<cr>
-vmap y ygv<esc>
+vnoremap y ygv<esc>
+
+vnoremap my "+y
+vnoremap mp "+p
 
 map D dd
 map Z zz
