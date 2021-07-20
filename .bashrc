@@ -112,6 +112,9 @@ alias c7='awk '\''{print $7}'\'''
 alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
+#Yookos
+alias logs='kubectl logs -f --tail 40 yookos-api-f9546989d-9zh65'
+
 #set -o noclobber
 
 # Cleaning swp files
