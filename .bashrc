@@ -46,7 +46,7 @@ alias lgg='lg --graph'
 alias add='git add .; git restore --staged yookos-protocol 2> /dev/null'
 alias com='git commit -sm'
 alias con='git commit -s --no-edit'
-alias amend='git commit --amend --no-edit'
+alias amend='add; git commit --amend --no-edit'
 alias ps='git push'
 alias currentBranch='git branch --show-current'
 alias psu='ps --set-upstream origin `currentBranch`'
@@ -113,7 +113,7 @@ alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
 #Yookos
-alias logs='kubectl logs -f --tail 40 yookos-api-f9546989d-9zh65'
+alias logs='kubectl logs -f yookos-api-f9546989d-9zh65'
 
 #set -o noclobber
 
