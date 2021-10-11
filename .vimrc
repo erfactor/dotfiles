@@ -24,6 +24,7 @@ nnoremap { ?\v^\s*$<cr>
 vnoremap y ygv<esc>
 
 vnoremap my "+y
+nnoremap mp "+p
 vnoremap mp "+p
 
 map D dd
