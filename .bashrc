@@ -100,8 +100,7 @@ shopt -u histverify
 export HISTIGNORE="&:[ ]*"
 export HISTSIZE=10000
 export HISTFILESIZE=10000
-export Desktop=C:/Users/$USERNAME/Desktop
-
+export Desktop=$HOME/Desktop
 # Extract columns
 alias c1='awk '\''{print $1}'\'''
 alias c2='awk '\''{print $2}'\'''
