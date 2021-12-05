@@ -10,7 +10,7 @@ alias r='dot run'
 alias exp='explorer .'
 # Flutter stuff
 alias run='flutter pub run build_runner build --delete-conflicting-outputs'
-alias runw='flutter pub run build_runner watch'
+alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
 alias fcl='flutter clean'
 alias fcr='flutter pub cache repair'
