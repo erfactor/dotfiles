@@ -2,9 +2,9 @@
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 # Updating bash files. Bashrc, vimrc shortcuts
-alias update='source ~/BashFiles/update.sh'
-alias brc='vim ~/BashFiles/.bashrc; update'
-alias vrc='vim ~/BashFiles/.vimrc'
+alias update='source ~/dotfiles/update.sh'
+alias brc='vim ~/dotfiles/.bashrc; update'
+alias vrc='vim ~/dotfiles/.vimrc'
 # Windows stuff
 alias r='dot run'
 alias exp='explorer .'
@@ -32,7 +32,7 @@ alias c='lastDir=$PWD; cd'
 alias b='tempDir=$PWD; cd $lastDir; lastDir=$tempDir'
 alias de='c $Desktop'
 alias home='c $HOME'
-alias bf='c $HOME/BashFiles'
+alias df='c $HOME/dotfiles'
 alias ..='c ..'
 
 # Git aliases
