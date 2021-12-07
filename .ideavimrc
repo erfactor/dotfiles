@@ -54,7 +54,7 @@ nnoremap mim miggOimport 'package:flutter/material.dart';<esc>`i
 nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
 nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
 nnoremap mie miggOimport 'package:yookos/extensions/yookos_extensions.dart';<esc>`i
-nnoremap mib miggOimport 'package:yookos/core/widgets/basic.dart';<esc>`i
+nnoremap mib miggOimport 'package:healp/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
 
 " Fancy mappings
