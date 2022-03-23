@@ -12,6 +12,7 @@ alias exp='explorer .'
 alias run='flutter pub run build_runner build --delete-conflicting-outputs'
 alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
+fpa(){ flutter pub add $1; fpg; }
 alias fcl='flutter clean'
 alias fcr='flutter pub cache repair'
 
