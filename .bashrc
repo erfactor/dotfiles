@@ -13,6 +13,7 @@ alias run='flutter pub run build_runner build --delete-conflicting-outputs'
 alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
 fpa(){ flutter pub add $1; fpg; }
+fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; }
 alias fcl='flutter clean'
 alias fcr='flutter pub cache repair'
 

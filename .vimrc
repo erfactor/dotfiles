@@ -39,6 +39,7 @@ nnoremap md V$?[\{\(\[]<enter>%o^
 nnoremap mc v%o
 noremap <c-j> 5j
 noremap <c-k> 5k
+inoremap jk <esc>
 
 " Indenting stuff. Remember about 'set shiftwidth'
 vnoremap > >gv
@@ -55,6 +56,7 @@ nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
 nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
 nnoremap mie miggOimport 'package:yookos/extensions/yookos_extensions.dart';<esc>`i
 nnoremap mib miggOimport 'package:bobilguiden/presentation/widget/basic/basic.dart';<esc>`i
+nnoremap mit miggOimport 'package:transdist/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mih miggOimport 'package:healp/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
 
