@@ -57,6 +57,7 @@ nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
 nnoremap mie miggOimport 'package:yookos/extensions/yookos_extensions.dart';<esc>`i
 nnoremap mib miggOimport 'package:bobilguiden/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mit miggOimport 'package:transdist/presentation/widget/basic/basic.dart';<esc>`i
+nnoremap mic miggOimport 'package:firebase_chat/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mih miggOimport 'package:healp/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
 
