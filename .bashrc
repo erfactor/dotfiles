@@ -14,10 +14,11 @@ alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
 fpa(){ flutter pub add $1 $2 $3 $4; fpg; }
 fpad(){ flutter pub add --dev $1; fpg; }
-fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; }
+fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
 alias fpr='flutter pub run'
 alias fcl='flutter clean'
 alias fcr='flutter pub cache repair'
+
 
 # Simple
 alias l='ls -AG'
