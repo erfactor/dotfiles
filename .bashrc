@@ -137,6 +137,7 @@ stty stop 'undef'
 
 # PATH
 PATH=$PATH:$HOME/myscripts:$HOME/src/flutter/bin:/c/src
+export PATH="$PATH":"$HOME/src/flutter/.pub-cache/bin"
 
 # Prompt
 # \t for time
