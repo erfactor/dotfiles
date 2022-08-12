@@ -1,0 +1,4 @@
+#!/bin/bash
+for n in {30..47}; do
+    printf "\e[$n;1m%s\e[0m\n" "Color $n";
+done

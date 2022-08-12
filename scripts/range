@@ -1,5 +1,4 @@
-for (( i=$1; i<=$2; i++ ));do
-{
+#!/bin/bash
+for (( i=$1; i<=$2; i++ )); do
     printf "$i\n";
-}
 done

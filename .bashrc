@@ -120,9 +120,6 @@ alias c7='awk '\''{print $7}'\'''
 alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
-#Yookos
-alias logs='kubectl logs -f yookos-api-f9546989d-9zh65'
-
 #set -o noclobber
 
 # Cleaning swp files
@@ -132,11 +129,8 @@ alias clean='rm `f ".*sw[op]"`'
 stty -ixon
 stty stop 'undef'
 
-# Fancy useful functions
-#range() { for ((i=$1; i<=$2; i++)); do printf "$i\n">> $3; done; }
-
 # PATH
-PATH=$PATH:$HOME/myscripts:$HOME/src/flutter/bin:/c/src
+export PATH=$PATH:$HOME/src/flutter/bin:/c/src
 export PATH="$PATH":"$HOME/src/flutter/.pub-cache/bin"
 
 # Prompt
