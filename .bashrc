@@ -62,9 +62,9 @@ alias pl='git pull'
 alias plr='git pull --rebase'
 alias cont='git rebase --continue'
 alias fc='git fetch'
-alias ln="awk '{print NR \":\" \$0}'"
-alias br='clear; git branch | ln'
-bra(){ fc; if [[ -z $1 ]]; then git branch -a | ln; else git branch -a | ln | g $1; fi; }
+alias printLines="awk '{print NR \":\" \$0}'"
+alias br='clear; git branch | printLines'
+bra(){ fc; if [[ -z $1 ]]; then git branch -a | printLines; else git branch -a | printLines | g $1; fi; }
 alias deleteBranch='git branch -D'
 alias saveLastBranch='lastBranch=`currentBranch`'
 alias createTempBranch='tempBranch=`currentBranch`'
