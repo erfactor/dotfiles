@@ -74,7 +74,7 @@ brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | t
 ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 cka(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch -a | head -$1 | tail -1 | sed 's/remotes\/origin\///'` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
-alias ckm='ckp master'
+alias ckpm='ckp main'
 alias ckd='ckp dev'
 alias ckb='saveLastBranch; git checkout -b'
 alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
@@ -144,3 +144,4 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
 #Add logs to file
 alias Log='v -c "Logs" -c "x"'
+source $HOME/dotfiles/flutter_completion.sh
