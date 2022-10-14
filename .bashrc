@@ -32,6 +32,7 @@ alias f='find -iregex'
 alias e='echo'
 alias g='grep -iIE --color'
 alias gr='g -R'
+alias rmd='rm -rf'
 
 # cd
 alias c='lastDir=$PWD; cd'
@@ -130,7 +131,7 @@ stty -ixon
 stty stop 'undef'
 
 # PATH
-export PATH=$PATH:$HOME/src/flutter/bin:/c/src
+export PATH=$PATH:$HOME/src/flutter/bin
 export PATH="$PATH":"$HOME/src/flutter/.pub-cache/bin"
 
 # Prompt
