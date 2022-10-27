@@ -92,6 +92,7 @@ alias mm='ckp master; back; git merge master'
 alias aap='add; amend; push;'
 alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
+drop(){ git reset --hard HEAD~$1; }
 
 
 #Auxiliary
