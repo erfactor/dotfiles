@@ -126,25 +126,25 @@ alias c7='awk '\''{print $7}'\'''
 alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
-# PATH
-export PATH=$PATH:$HOME/src/flutter/bin
-export PATH=$PATH:$HOME/src/flutter/.pub-cache/bin
-
 # Prompt, \t for time
 # export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
-export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
+ps_branch() { currentBranch 2>/dev/null | awk '{print " ("$1")"}'; }
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(ps_branch)\[\033[00m\] $ "
 
-#set -o noclobber
-# Cleaning swp files
-alias clean='rm `f ".*sw[op]"`'
 # Suspending flow control in shell
 stty -ixon
 stty stop 'undef'
+#set -o noclobber # disable overwriting files with >
 
-git_branch() {
- currentBranch 2> /dev/null | awk '{print " ("$1")"}'
-}
-
-#Add logs to file
+# Random
+alias clean='rm `f ".*sw[op]"`'
+man(){ $1 --help; }
 alias Log='v -c "Logs" -c "x"'
+
+# PATH
+export PATH=$PATH:$HOME/src/flutter/bin
+export PATH=$PATH:$HOME/src/flutter/.pub-cache/bin
+export PATH=$PATH:$HOME/dotfiles/scripts
+
 source $HOME/dotfiles/flutter_completion.sh
+
