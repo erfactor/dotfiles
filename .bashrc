@@ -1,14 +1,16 @@
 # Case insensitive terminal
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
-# Updating bash files. Bashrc, vimrc shortcuts
+
+# Updating bash files. .bashrc, .vimrc shortcuts
 alias update='source ~/dotfiles/update.sh'
 alias brc='vim ~/dotfiles/.bashrc; update'
-alias vrc='vim ~/dotfiles/.vimrc'
-# Windows stuff
-alias r='dot run'
-alias exp='explorer .'
-# Flutter stuff
+alias vrc='vim ~/dotfiles/.vimrc; update'
+
+# Windows
+alias ex='explorer .'
+
+# Flutter
 alias run='flutter pub run build_runner build --delete-conflicting-outputs'
 alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
@@ -17,13 +19,12 @@ fpad(){ flutter pub add --dev $1 $2 $3 $4; fpg; }
 fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
 alias fr='flutter'
 alias fpr='flutter pub run'
-alias fcl='flutter clean'
+alias fcl='flutter clean; fpg'
 alias fcr='flutter pub cache repair'
 
-
 # Simple
-alias l='ls -AG'
-alias ll='l -lh'
+alias l='ls -AG --color --group-directories-first'
+alias ll='l -gh'
 alias p='pwd'
 alias v='vim'
 alias h='history | tail -n 12'
@@ -42,7 +43,7 @@ alias home='c $HOME'
 alias df='c $HOME/dotfiles'
 alias ..='c ..'
 
-# Git aliases
+# Git
 alias rs='git reset --hard'
 alias rss='git reset'
 alias cl='git clone'
@@ -99,10 +100,12 @@ drop(){ git reset --hard HEAD~$1; }
 alias h10='head -10'
 alias t10='tail -10'
 alias fds='ls -la /proc/$$/fd'
+alias kil='kill -9 '
+
+# Dotnet
 alias dot='dotnet'
 alias dotgen='dot aspnet-codegenerator'
 alias dwr='dot watch run &'
-alias kil='kill -9 '
 
 # History
 shopt -s histreedit
@@ -111,6 +114,7 @@ export HISTIGNORE="&:[ ]*"
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export Desktop=$HOME/Desktop
+
 # Extract columns
 alias c1='awk '\''{print $1}'\'''
 alias c2='awk '\''{print $2}'\'''
@@ -122,27 +126,24 @@ alias c7='awk '\''{print $7}'\'''
 alias c8='awk '\''{print $8}'\'''
 alias c9='awk '\''{print $9}'\'''
 
-#set -o noclobber
+# PATH
+export PATH=$PATH:$HOME/src/flutter/bin
+export PATH=$PATH:$HOME/src/flutter/.pub-cache/bin
 
+# Prompt, \t for time
+# export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
+
+#set -o noclobber
 # Cleaning swp files
 alias clean='rm `f ".*sw[op]"`'
-
 # Suspending flow control in shell
 stty -ixon
 stty stop 'undef'
 
-# PATH
-export PATH=$PATH:$HOME/src/flutter/bin
-export PATH="$PATH":"$HOME/src/flutter/.pub-cache/bin"
-
-# Prompt
-# \t for time
-# export PS1="\[\e[40;1;35m\]\t | \w \$ \[\e[m\]"
-
 git_branch() {
  currentBranch 2> /dev/null | awk '{print " ("$1")"}'
 }
-export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
 #Add logs to file
 alias Log='v -c "Logs" -c "x"'

@@ -2,15 +2,10 @@
 set number
 set nowrap
 set cul
+set relativenumber
+set incsearch
 "set hlsearch
 "nmap ,, :noh<CR>
-set incsearch
-
-" Tab stuff
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
 
 " Scrolloff
 set so=5
@@ -30,18 +25,21 @@ vnoremap mp "+p
 map D dd
 map Z zz
 map U uuu
-" Rider helpers
-" inoremap ; <end>;
+" Helpers
+inoremap ; <end>;
 nnoremap mw dawea<space><esc>p
-nnoremap ms 2jS
-nnoremap ma 2jA
+nnoremap mc ebv%o
 nnoremap md V$?[\{\(\[]<enter>%o^
-nnoremap mc v%o
 noremap <c-j> 5j
 noremap <c-k> 5k
 inoremap jk <esc>
 
 " Indenting stuff. Remember about 'set shiftwidth'
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 vnoremap > >gv
 vnoremap < <gv
 nnoremap <Tab> >> 
@@ -53,13 +51,9 @@ vmap <S-Tab> <
 " Flutter helpers
 nnoremap mim miggOimport 'package:flutter/material.dart';<esc>`i
 nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
-nnoremap mif miggOimport 'package:flutter_bloc/flutter_bloc.dart';<esc>`i
-nnoremap mie miggOimport 'package:yookos/extensions/yookos_extensions.dart';<esc>`i
-nnoremap mib miggOimport 'package:bobilguiden/presentation/widget/basic/basic.dart';<esc>`i
-nnoremap mit miggOimport 'package:transdist/presentation/widget/basic/basic.dart';<esc>`i
-nnoremap mic miggOimport 'package:firebase_chat/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mih miggOimport 'package:healp/presentation/widget/basic/basic.dart';<esc>`i
-nnoremap mq 0/BlocProvider<cr>cffcontext.read<esc>f(dib^
+nnoremap mib miggOimport 'package:bobilguiden/presentation/widget/basic/basic.dart';<esc>`i
+nnoremap mic miggOimport 'package:firebase_chat/presentation/widget/basic/basic.dart';<esc>`i
 
 " Fancy mappings
 nnoremap <space> @q
@@ -67,14 +61,16 @@ nnoremap <space> @q
 command! -nargs=? Filter let @a='' | execute 'g/<args>/y A' | new | setlocal bt=nofile | put! a
 nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 
-"Registers
-let @r='%s/\v\c(public|private).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),''\v\n.*\{'','''',''g'') . "\");"'
-"Mein Commanden
-command! Logs %s/\v\c(public|private|protected).*\(.*\)$\n.*\{/\=submatch(0) . "\n         Tizen.Log.Verbose(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");"
-command! Inba %s/a/x/g
+" Log
+let @r='%s/\v\c(public|private|protected).*\(.*\)$\n.*\{/\=submatch(0) . "\n         log(\"tag\",\"" . substitute(submatch(0),''\v\n.*\{'','''',''g'') . "\");"'
+command! Logs %s/\v\c(public|private|protected).*\(.*\)$\n.*\{/\=submatch(0) . "\n         log(\"tag\",\"" . substitute(submatch(0),'\v\n.*\{','','g') . "\");"
+" Commands
+" command! Sample %s/a/x/g
+command! Df !dart fix --apply %
 
-" Very useful functions
+" Quit
 nnoremap <c-q> :x<cr>
+
 set nocompatible
 set hidden
 syntax on
