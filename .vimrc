@@ -26,7 +26,6 @@ map D dd
 map Z zz
 map U uuu
 " Helpers
-inoremap ; <end>;
 nnoremap mw dawea<space><esc>p
 nnoremap mc ebv%o
 nnoremap md V$?[\{\(\[]<enter>%o^
