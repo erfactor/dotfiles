@@ -140,6 +140,7 @@ stty stop 'undef'
 alias clean='rm `f ".*sw[op]"`'
 man(){ $1 --help; }
 alias Log='v -c "Logs" -c "x"'
+alias flane="bundle exec fastlane"
 
 # PATH
 export PATH=$PATH:$HOME/src/flutter/bin
