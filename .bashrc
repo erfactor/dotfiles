@@ -27,7 +27,8 @@ alias dcm='dart run dart_code_metrics:metrics analyze lib'
 alias dr='dart pub global run'
 
 # Simple
-alias l='ls -AG --color --group-directories-first'
+alias l='ls -AG --color'
+#alias l='ls -AG --color --group-directories-first'
 alias ll='l -gh'
 alias p='pwd'
 alias v='vim'
