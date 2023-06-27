@@ -1,3 +1,5 @@
+alias fra='flutter analyze --no-preamble > $HOME/PycharmProjects/pythonProject/errors.txt'
+alias frd='dart run dart_code_metrics:metrics analyze lib -r codeclimate | sed "s/\x00//g" | grep issue > $HOME/PycharmProjects/pythonProject/dcm.txt'
 # Case insensitive terminal
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
@@ -11,17 +13,18 @@ alias vrc='vim ~/dotfiles/.vimrc; update'
 alias ex='explorer .'
 
 # Flutter
-alias run='flutter pub run build_runner build --delete-conflicting-outputs'
-alias runw='flutter pub run build_runner watch --delete-conflicting-outputs'
+alias run='dart run build_runner build --delete-conflicting-outputs'
+alias runw='dart run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
-fpa(){ flutter pub add $1 $2 $3 $4; fpg; }
-fpad(){ flutter pub add --dev $1 $2 $3 $4; fpg; }
+alias fpa='flutter pub add'
+alias fpad='flutter pub add --dev'
 fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
 alias fr='flutter'
-alias fpr='flutter pub run'
+alias dr='dart run'
 alias fcl='flutter clean; fpg'
 alias fcr='flutter pub cache repair'
-alias fdcm='flutter pub run dart_code_metrics:metrics analyze lib'
+alias dcm='dart run dart_code_metrics:metrics analyze lib'
+alias dr='dart pub global run'
 
 # Simple
 alias l='ls -AG --color --group-directories-first'
@@ -32,7 +35,7 @@ alias h='history | tail -n 12'
 alias hg='history | g'
 alias f='find -iregex'
 alias e='echo'
-alias g='grep -iIE --color'
+alias g='grep -iIE --color -A 5'
 alias gr='g -R'
 alias rmd='rm -rf'
 
@@ -45,7 +48,7 @@ alias df='c $HOME/dotfiles'
 alias ..='c ..'
 
 # Git
-alias rs='git reset --hard'
+alias rs='git add -NA; git reset --hard'
 alias rss='git reset'
 alias cl='git clone'
 alias st='clear; git status'
@@ -78,7 +81,7 @@ ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git bran
 cka(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch -a | head -$1 | tail -1 | sed 's/remotes\/origin\///'` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
 alias ckpm='ckp main'
-alias ckd='ckp dev'
+alias ckd='ckp develop'
 alias ckb='saveLastBranch; git checkout -b'
 alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
 alias ac='add; com'
@@ -88,7 +91,7 @@ alias acpf='acp fix'
 alias macp='add; con; ps;'
 alias cherry='git cherry-pick'
 alias merge='git merge'
-alias md='merge dev'
+alias md='merge develop'
 alias mmd='ckd; back; md'
 alias mm='ckp master; back; git merge master'
 alias aap='add; amend; push;'

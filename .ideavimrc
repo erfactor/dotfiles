@@ -2,7 +2,7 @@
 set number
 set nowrap
 set cul
-set relativenumber
+" set relativenumber
 set incsearch
 "set hlsearch
 "nmap ,, :noh<CR>
