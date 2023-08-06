@@ -26,8 +26,8 @@ alias dcm='dart run dart_code_metrics:metrics analyze lib'
 alias dr='dart pub global run'
 
 # Simple
-alias l='ls -AG --color --group-directories-first'
-alias ll='l -gh'
+alias l='ls -A --color --group-directories-first' # All except . and ..
+alias ll='l -goh' # No owner, group. Human-readable size
 alias p='pwd'
 alias v='vim'
 alias h='history | tail -n 12'
