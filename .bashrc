@@ -1,5 +1,3 @@
-alias fra='flutter analyze --no-preamble > $HOME/PycharmProjects/pythonProject/errors.txt'
-alias frd='dart run dart_code_metrics:metrics analyze lib -r codeclimate | sed "s/\x00//g" | grep issue > $HOME/PycharmProjects/pythonProject/dcm.txt'
 # Case insensitive terminal
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
@@ -7,6 +5,7 @@ bind "set show-all-if-ambiguous on"
 # Updating bash files. .bashrc, .vimrc shortcuts
 alias update='source ~/dotfiles/update.sh'
 alias brc='vim ~/dotfiles/.bashrc; update'
+alias cbrc='vim ~/dotfiles/.custombashrc; update'
 alias vrc='vim ~/dotfiles/.vimrc; update'
 
 # Windows
@@ -27,8 +26,7 @@ alias dcm='dart run dart_code_metrics:metrics analyze lib'
 alias dr='dart pub global run'
 
 # Simple
-alias l='ls -AG --color'
-#alias l='ls -AG --color --group-directories-first'
+alias l='ls -AG --color --group-directories-first'
 alias ll='l -gh'
 alias p='pwd'
 alias v='vim'
@@ -100,7 +98,6 @@ alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
 drop(){ git reset --hard HEAD~$1; }
 
-
 #Auxiliary
 alias h10='head -10'
 alias t10='tail -10'
@@ -141,16 +138,17 @@ stty -ixon
 stty stop 'undef'
 #set -o noclobber # disable overwriting files with >
 
+# Setup
+export PATH=$PATH:$HOME/dotfiles/scripts
+source $HOME/dotfiles/flutter_completion.sh
+
 # Random
 alias clean='rm `f ".*sw[op]"`'
 man(){ $1 --help; }
 alias Log='v -c "Logs" -c "x"'
 alias flane="bundle exec fastlane"
+alias fra='flutter analyze --no-preamble > $HOME/PycharmProjects/pythonProject/errors.txt'
+alias frd='dart run dart_code_metrics:metrics analyze lib -r codeclimate | sed "s/\x00//g" | grep issue > $HOME/PycharmProjects/pythonProject/dcm.txt'
 
-# PATH
-export PATH=$PATH:$HOME/src/flutter/bin
-export PATH=$PATH:$HOME/src/flutter/.pub-cache/bin
-export PATH=$PATH:$HOME/dotfiles/scripts
-
-source $HOME/dotfiles/flutter_completion.sh
-
+# fix ls on macOS
+if [[ $OSTYPE == darwin* ]]; then alias ls=gls; fi;

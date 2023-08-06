@@ -1,0 +1,15 @@
+[user]
+	email = <email>
+	name = <name>
+[core]
+	excludesfile = ~/.gitignore_global
+; windows only
+	autocrlf = false
+	eol = lf
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+; personal preference
+[init]
+	defaultBranch = master

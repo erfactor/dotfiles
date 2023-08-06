@@ -1,6 +1,7 @@
 #!/bin/bash
 cd ~/dotfiles
-source .bashrc
+test -f .custombashrc && cat .bashrc .custombashrc > ~/.bashrc || cp .bashrc ~/.bashrc
+source ~/.bashrc
 cp .vimrc .ideavimrc
-cp .bash_profile .bashrc .vimrc .ideavimrc .minttyrc ..
+cp .bash_profile .vimrc .ideavimrc .minttyrc ..
 cd -
