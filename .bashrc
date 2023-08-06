@@ -17,6 +17,8 @@ alias runw='dart run build_runner watch --delete-conflicting-outputs'
 alias fpg='flutter pub get'
 alias fpa='flutter pub add'
 alias fpad='flutter pub add --dev'
+alias dpgl='dart pub global list'
+alias dpga='dart pub global activate'
 fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
 alias fr='flutter'
 alias dr='dart run'
