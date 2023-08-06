@@ -81,7 +81,8 @@ brd(){ if [[ $1 =~ $numberRegex ]]; then deleteBranch `git branch | head -$1 | t
 ck(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch | head -$1 | tail -1` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 cka(){ createTempBranch; if [[ $1 =~ $numberRegex ]]; then git checkout `git branch -a | head -$1 | tail -1 | sed 's/remotes\/origin\///'` && saveTempBranch; else git checkout $1 && saveTempBranch; fi; }
 ckp(){ ck $1; pl; }
-alias ckpm='ckp main'
+alias setup_main_branch='git show-branch master &> /dev/null && export MAIN_BRANCH=master || export MAIN_BRANCH=main'
+alias ckpm='setup_main_branch; ckp $MAIN_BRANCH'
 alias ckd='ckp develop'
 alias ckb='saveLastBranch; git checkout -b'
 alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
@@ -94,7 +95,7 @@ alias cherry='git cherry-pick'
 alias merge='git merge'
 alias md='merge develop'
 alias mmd='ckd; back; md'
-alias mm='ckp master; back; git merge master'
+alias mm='ckpm; back; git merge $MAIN_BRANCH'
 alias aap='add; amend; push;'
 alias gd='git diff'
 stage(){ git reset --soft HEAD~$1; }
