@@ -26,6 +26,7 @@ alias fcl='flutter clean; fpg'
 alias fcr='flutter pub cache repair'
 alias dcm='dart run dart_code_metrics:metrics analyze lib'
 alias dr='dart pub global run'
+alias drm='dr melos'
 
 # Simple
 alias l='ls -A --color --group-directories-first' # All except . and ..
