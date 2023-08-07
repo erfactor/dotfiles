@@ -19,14 +19,15 @@ alias fpa='flutter pub add'
 alias fpad='flutter pub add --dev'
 alias dpgl='dart pub global list'
 alias dpga='dart pub global activate'
+alias dpgr='dart pub global run'
 fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
 alias fr='flutter'
 alias dr='dart run'
 alias fcl='flutter clean; fpg'
 alias fcr='flutter pub cache repair'
 alias dcm='dart run dart_code_metrics:metrics analyze lib'
-alias dr='dart pub global run'
 alias drm='dr melos'
+alias drr='drm run'
 
 # Simple
 alias l='ls -A --color --group-directories-first' # All except . and ..
