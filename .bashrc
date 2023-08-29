@@ -8,9 +8,6 @@ alias brc='vim ~/dotfiles/.bashrc; update'
 alias cbrc='vim ~/dotfiles/.custombashrc; update'
 alias vrc='vim ~/dotfiles/.vimrc; update'
 
-# Windows
-alias ex='explorer .'
-
 # Flutter
 alias run='dart run build_runner build --delete-conflicting-outputs'
 alias runw='dart run build_runner watch --delete-conflicting-outputs'
@@ -157,3 +154,9 @@ alias frd='dart run dart_code_metrics:metrics analyze lib -r codeclimate | sed "
 
 # fix ls on macOS
 if [[ $OSTYPE == darwin* ]]; then alias ls=gls; fi;
+
+# Windows only
+if [[ $OSTYPE == msys ]]; then 
+  alias ex='explorer .'
+  alias as='start studio64.exe'
+fi;
