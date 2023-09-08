@@ -27,8 +27,9 @@ map Z zz
 map U uuu
 " Helpers
 nnoremap mw dawea<space><esc>p
-nnoremap mc ebv%o
-nnoremap md V$?[\{\(\[]<enter>%o^
+nnoremap mc v%o
+nnoremap md $V%o^
+" nnoremap md $?[\{\(\[]<enter>%Vo^
 noremap <c-j> 5j
 noremap <c-k> 5k
 inoremap jk <esc>
@@ -49,9 +50,6 @@ vmap <S-Tab> <
 
 " Flutter helpers
 nnoremap mim miggOimport 'package:flutter/material.dart';<esc>`i
-nnoremap mix miggOimport 'package:dartx/dartx.dart';<esc>`i
-nnoremap mih miggOimport 'package:healp/presentation/widget/basic/basic.dart';<esc>`i
-nnoremap mib miggOimport 'package:bobilguiden/presentation/widget/basic/basic.dart';<esc>`i
 nnoremap mic miggOimport 'package:firebase_chat/presentation/widget/basic/basic.dart';<esc>`i
 
 " Fancy mappings
