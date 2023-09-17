@@ -7,6 +7,7 @@ alias update='source ~/dotfiles/update.sh'
 alias brc='vim ~/dotfiles/.bashrc; update'
 alias cbrc='vim ~/dotfiles/.custombashrc; update'
 alias vrc='vim ~/dotfiles/.vimrc; update'
+alias updf='df; pl; update; b'
 
 # Flutter
 alias run='dart run build_runner build --delete-conflicting-outputs'
