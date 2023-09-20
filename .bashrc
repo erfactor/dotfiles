@@ -90,6 +90,7 @@ alias back='createTempBranch; git checkout $lastBranch; saveTempBranch'
 alias ac='add; com'
 acp(){ ac "$1"; ps; }
 acpu(){ ac "$1"; psu; }
+alias acf='ac fix'
 alias acpf='acp fix'
 alias macp='add; con; ps;'
 alias cherry='git cherry-pick'
