@@ -99,7 +99,7 @@ alias md='merge develop'
 alias mmd='ckd; back; md'
 alias mm='ckpm; back; git merge $MAIN_BRANCH'
 alias aap='add; amend; push;'
-alias gd='git diff'
+alias gd='git diff --word-diff=color'
 stage(){ git reset --soft HEAD~$1; }
 drop(){ git reset --hard HEAD~$1; }
 
