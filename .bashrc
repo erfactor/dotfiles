@@ -149,7 +149,7 @@ source $HOME/dotfiles/flutter_completion.sh
 
 # Random
 alias clean='rm `f ".*sw[op]"`'
-man(){ $1 --help; }
+help(){ $1 --help; }
 alias Log='v -c "Logs" -c "x"'
 alias flane="bundle exec fastlane"
 alias fra='flutter analyze --no-preamble > $HOME/PycharmProjects/pythonProject/errors.txt'
