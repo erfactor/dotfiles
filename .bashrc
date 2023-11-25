@@ -19,6 +19,7 @@ alias dpgl='dart pub global list'
 alias dpga='dart pub global activate'
 alias dpgr='dart pub global run'
 fba(){ flutter build appbundle --flavor=$1 --dart-define=flavor=$1 --build-number $2; cp build/app/outputs/bundle/$1Release/app-$1-release.aab $Desktop; }
+frun(){ flutter run --flavor=dev --dart-define=flavor=dev; }
 alias fr='flutter'
 alias dr='dart run'
 alias fcl='flutter clean; fpg'
@@ -69,7 +70,7 @@ alias psu='ps --set-upstream origin `currentBranch`'
 alias pl='git pull'
 alias plr='git pull --rebase'
 alias cont='git rebase --continue'
-alias fc='git fetch'
+alias fc='git fetch --prune'
 alias printLines="awk '{print NR \":\" \$0}'"
 alias br='clear; git branch | printLines'
 bra(){ fc; if [[ -z $1 ]]; then git branch -a | printLines; else git branch -a | printLines | g $1; fi; }
