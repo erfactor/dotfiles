@@ -28,6 +28,7 @@ alias dcm='dart run dart_code_metrics:metrics analyze lib --disable-sunset-warni
 alias mel='dpgr melos'
 alias mr='mel run'
 alias mpl='mr pub; mr loc'
+alias mrl='mr loc'
 alias podi='cd ios; rm Podfile.lock; pod install; ..'
 alias rmpub='rm pubspec.lock; rm **/pubspec.lock'
 
